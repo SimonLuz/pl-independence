@@ -1,0 +1,66 @@
+/*
+// barwy flagi:
+// CZERWIEN:
+// oficjalna: #d4213D
+// nieoficjalna: #ff000
+// BIEL: #e7e8e9;
+//KREW JASNA: #9c0a0b
+//KREW CIEMNA: #390c13
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding:20px;
+}
+
+
+.hero {
+    
+    width: 95vw;
+    height: 75vh;
+    
+    &__flag {
+        width: 100%;
+        height: 400px;
+        //border: 1px solid #a0a0a0;
+    
+    &--top {
+      height: 300px;
+      background-image: linear-gradient(
+          to right,
+          #eee,
+          #dadada);
+        background-size: cover;
+        font-family: candara;
+        font-size: 140px;
+        text-align: center;
+        color: #9c0a0b;
+    }
+    
+    &--bottom {
+      height: 300px;
+      background-image: linear-gradient(
+          to right, 
+          #fecfd1, 
+          //#d4213D,
+            #9c0a0b);
+        background-size: cover;
+    }
+  }
+
+    &__blood {
+        max-width: 400px;
+        float: right;
+        
+        &--photo {
+            width: 100%;
+        }
+    }
+    
+}
