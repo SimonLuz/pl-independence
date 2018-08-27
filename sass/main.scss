@@ -8,59 +8,119 @@
 //KREW CIEMNA: #390c13
 */
 
+$color-text-gray-dark: #3e3e3e;
+$color-text-gray-medium: #777;
+$color-text-red-dark: #390c13;
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    
 }
 
 body {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding:20px;
+    //max-width: 1240px;
+    margin: 0 auto;
+    padding:20px;
+    color: $color-text-gray-dark;
+    line-height: 1.7;
+    
 }
 
 
-.hero {
-    
-    width: 95vw;
-    height: 75vh;
+.header {
+    //width: 95vw;
+    height: 85vh;
     
     &__flag {
         width: 100%;
-        height: 400px;
+        height: 600px;
         //border: 1px solid #a0a0a0;
     
-    &--top {
-      height: 300px;
-      background-image: linear-gradient(
-          to right,
-          #eee,
-          #dadada);
-        background-size: cover;
-        font-family: candara;
-        font-size: 140px;
-        text-align: center;
-        color: #9c0a0b;
-    }
+        &--top {
+          height: 300px;
+          background-image: linear-gradient(
+            to right,
+            #eee,
+            #dadada);
+            background-size: cover;
+            
+        }
     
-    &--bottom {
-      height: 300px;
-      background-image: linear-gradient(
-          to right, 
-          #fecfd1, 
-          //#d4213D,
+        &--bottom {
+          height: 300px;
+          background-image: linear-gradient(
+            to right, 
+            #fecfd1, 
+            //#d4213D,
             #9c0a0b);
-        background-size: cover;
-    }
-  }
-
-    &__blood {
-        max-width: 400px;
-        float: right;
+        //background-size: cover;
+        }
         
-        &--photo {
-            width: 100%;
+        &--blood {
+            text-align: right;
+            
+            &-photo {
+                max-width: 400px;
+            }
+          }
+    }
+}
+
+.heading {
+    
+    position: relative;
+
+    &__primary {
+    
+    
+    //font-family: candara; Dosis; allerta stencil, mallanna, montserrat, nanum gothic
+    font-family: arial;
+    font-size: 80px;
+    text-align: center;
+    color: #9c0a0b;
+    
+    
+    
+        &--main {
+            display: block;
+            position: absolute;
+            top: 50%;
+            //left: 50%;
+            //transform: translate(-50%, -50%);
+            font-size: 120px;
+            color: rgba(160, 10, 11, .1);
+        } 
+
+        &--sub {
+            display: block;
+            position: absolute;
+            font-weight: 100;
+            top: 140%;
+        }
+        
+        &--100 {
+            display: block;
+            position: absolute;
+            font-weight: 100;
+            top: 170%;
+        } 
+        
+        &--of {
+            display: block;
+            position: absolute;
+            font-weight: 100;
+            top: 240%;
+        } 
+
+        &--ind {
+            display: block;
+            position: absolute;
+            top: 200%;
         }
     }
-    
 }
