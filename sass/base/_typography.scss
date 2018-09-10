@@ -1,0 +1,14 @@
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    display: inline-block;
+    background-image: linear-gradient(
+        to right, 
+        $color-flag-red-light, 
+        $color-flag-red-dark
+    );
+    -webkit-background-clip: text;    
+    background-clip: text;    
+    color:transparent;
+    letter-spacing: 2px;
+}

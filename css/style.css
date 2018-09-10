@@ -24,6 +24,19 @@ body {
   line-height: 1.7;
   color: #777; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(to right, #fecfd1, #9c0a0b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 2px; }
+
+.u-center-text {
+  text-align: center; }
+
 .row {
   max-width: 114rem;
   background-color: #fff;
@@ -52,6 +65,9 @@ body {
   .row .col-3-of-4 {
     width: calc(2 * 6rem + 3 * ((100% - (6rem * 3)) / 4)); }
 
+.section-about {
+  padding: 15rem 0; }
+
 body {
   margin: 0 auto;
   padding-top: 20px;
@@ -73,7 +89,6 @@ body {
     .header__primary--main {
       display: block;
       position: absolute;
-      width: 100%;
       top: 2%;
       left: 2%;
       font-size: 95px;
