@@ -28,13 +28,32 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   display: inline-block;
-  background-image: linear-gradient(to right, #fecfd1, #9c0a0b);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  letter-spacing: 2px; }
+  font-weight: 300;
+  /*
+    background-image: linear-gradient(
+        to right, 
+        $color-flag-red-light, 
+        $color-flag-red-dark
+    );
+    -webkit-background-clip: text;    
+    background-clip: text;    
+    color:transparent;
+    letter-spacing: 2px;
+    */ }
+  .heading-secondary:after {
+    display: block;
+    content: "";
+    height: 2px;
+    background-color: orange;
+    width: 15rem;
+    margin: 3rem auto; }
 
 .u-center-text {
+  text-align: center; }
+
+.u-intro-copy {
+  display: inline-block;
+  width: 70%;
   text-align: center; }
 
 .row {
@@ -66,6 +85,7 @@ body {
     width: calc(2 * 6rem + 3 * ((100% - (6rem * 3)) / 4)); }
 
 .section-about {
+  margin: 6rem;
   padding: 15rem 0; }
 
 body {

@@ -2,6 +2,8 @@
     font-size: 3.5rem;
     text-transform: uppercase;
     display: inline-block;
+    font-weight: 300;
+    /*
     background-image: linear-gradient(
         to right, 
         $color-flag-red-light, 
@@ -11,4 +13,14 @@
     background-clip: text;    
     color:transparent;
     letter-spacing: 2px;
+    */
+    
+    &:after {
+        display: block;
+        content: "";
+        height: 2px;
+        background-color: orange;
+        width: 15rem;
+        margin: 3rem auto;
+    }
 }
