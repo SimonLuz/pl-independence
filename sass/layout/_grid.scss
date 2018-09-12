@@ -1,0 +1,49 @@
+// .row - a container for each configuration of grid layout
+
+.row {
+    max-width: $grid-width;
+    background-color: #fff;
+    margin: 0 auto;
+    
+    &:not(:last-child) {
+        margin-bottom: $grid-gutter-vertical;
+    }
+
+    @include clearfix;
+   
+    [class^="col-"] {
+        float: left;
+        
+        &:not(:last-child) {
+            margin-right: $grid-gutter-horizontal;
+        }
+    }
+    .col-1-of-2 {
+        width: calc((100% - #{$grid-gutter-horizontal}) / 2);
+// in calc() functions variables MUST have # and be wrapped in {}
+        
+    }
+    .col-1-of-3 {
+        width: calc((100% - (#{$grid-gutter-horizontal} * 2)) / 3);
+      
+    }
+    
+    .col-2-of-3 {
+        width: calc(#{$grid-gutter-horizontal} + 2*((100% - (#{$grid-gutter-horizontal} * 2)) / 3));
+    }
+    
+    .col-1-of-4 {
+        width: calc((100% - (#{$grid-gutter-horizontal} * 3)) / 4);
+      
+    }
+    
+    .col-2-of-4 {
+        width: calc(#{$grid-gutter-horizontal} + 2 * ((100% - (#{$grid-gutter-horizontal} * 3)) / 4));
+    }
+    
+    .col-3-of-4 {
+        width: calc(2 * #{$grid-gutter-horizontal} + 3 * ((100% - (#{$grid-gutter-horizontal} * 3)) / 4));
+    }
+}
+
+
