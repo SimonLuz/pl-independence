@@ -19,7 +19,7 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.6rem;
   line-height: 1.7;
   color: #777; }
@@ -27,19 +27,8 @@ body {
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
-  display: inline-block;
-  font-weight: 300;
-  /*
-    background-image: linear-gradient(
-        to right, 
-        $color-flag-red-light, 
-        $color-flag-red-dark
-    );
-    -webkit-background-clip: text;    
-    background-clip: text;    
-    color:transparent;
-    letter-spacing: 2px;
-    */ }
+  display: block;
+  font-weight: 300; }
   .heading-secondary:after {
     display: block;
     content: "";
@@ -48,14 +37,42 @@ body {
     width: 15rem;
     margin: 3rem auto; }
 
+.long-copy {
+  display: inline-block;
+  max-width: 70rem;
+  text-align: center; }
+
+.heading-tertiary {
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 1.5rem; }
+
 .u-center-text {
   text-align: center; }
 
-.u-intro-copy {
-  display: inline-block;
-  width: 70%;
-  text-align: center;
+.u-margin-top-big {
+  margin-top: 8rem; }
+
+.u-margin-top-medium {
+  margin-top: 4rem; }
+
+.u-margin-top-small {
+  margin-top: 2rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
   margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+img {
+  display: inline-block;
+  margin: 0 auto;
+  width: 10rem;
+  height: 10rem; }
 
 .row {
   max-width: 114rem;
@@ -85,8 +102,7 @@ body {
     width: calc(2 * 6rem + 3 * ((100% - (6rem * 3)) / 4)); }
 
 .section-about {
-  margin: 6rem;
-  padding: 15rem 0; }
+  background-color: lightcyan; }
 
 body {
   margin: 0 auto;

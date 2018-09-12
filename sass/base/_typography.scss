@@ -1,19 +1,9 @@
 .heading-secondary {
     font-size: 3.5rem;
     text-transform: uppercase;
-    display: inline-block;
+    display: block;
     font-weight: 300;
-    /*
-    background-image: linear-gradient(
-        to right, 
-        $color-flag-red-light, 
-        $color-flag-red-dark
-    );
-    -webkit-background-clip: text;    
-    background-clip: text;    
-    color:transparent;
-    letter-spacing: 2px;
-    */
+        
     
     &:after {
         display: block;
@@ -23,4 +13,16 @@
         width: 15rem;
         margin: 3rem auto;
     }
+}
+
+.long-copy {
+    display: inline-block;
+    max-width: 70rem;
+    text-align: center;
+}
+
+.heading-tertiary {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
 }
