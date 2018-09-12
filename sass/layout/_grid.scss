@@ -12,13 +12,11 @@
     @include clearfix;
    
     [class^="col-"] {
-        background-color: orange;
         float: left;
         
         &:not(:last-child) {
             margin-right: $grid-gutter-horizontal;
         }
-    
     }
     .col-1-of-2 {
         width: calc((100% - #{$grid-gutter-horizontal}) / 2);
