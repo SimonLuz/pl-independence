@@ -1,4 +1,4 @@
-// TIMELINE LINE START
+// TIMELINE 'LINE' START
 .timeline-container {
     position: relative;
     padding-top: 3rem;
@@ -21,46 +21,8 @@
 .timeline-item {
     position: relative;
     margin: 4rem 0;
- 
-//ANIMATION fadeInLeft DELAY - START
-    &:nth-of-type(2) &__box {
-        animation-delay: .2s;
-    }
-    
-    &:nth-of-type(3) &__box {
-        animation-delay: .4s;
-    }
-    
-    &:nth-of-type(4) &__box {
-        animation-delay: .6s;
-    }
-    
-    &:nth-of-type(5) &__box {
-        animation-delay: .8s;
-    }
-    
-//ANIMATION fadeInRight DELAY - START
-    &:nth-of-type(1) &__head {
-        animation-delay: .3s;
-    }
-    
-    &:nth-of-type(2) &__head {
-        animation-delay: .6s;
-    }
-    
-    &:nth-of-type(3) &__head {
-        animation-delay: .9s;
-    }
-    
-    &:nth-of-type(4) &__head {
-        animation-delay: 1.2s;
-    }
-    
-    &:nth-of-type(5) &__head {
-        animation-delay: 1.5s;
-    }
-//ANIMATION fadeInRight DELAY - END
-    
+
+// START TIMELINE ICON STYLES
     &__box {
         display: inline-block;
         position: absolute;
@@ -69,9 +31,30 @@
         background-color: #fff;
         padding: .5rem;
         opacity: 0;
-        animation-name: fadeInLeft;
-        animation-duration: .4s;
-        animation-fill-mode: forwards;
+        
+        
+        &--animated {
+            opacity: 0;
+            animation-name: fadeInLeft;
+            animation-duration: .4s;
+            animation-fill-mode: forwards;
+        }
+    }
+//ANIMATION fadeInLeft DELAY - START
+    &:nth-of-type(2) &__box--animated {
+        animation-delay: .2s;
+    }
+    
+    &:nth-of-type(3) &__box--animated {
+        animation-delay: .4s;
+    }
+    
+    &:nth-of-type(4) &__box--animated {
+        animation-delay: .6s;
+    }
+    
+    &:nth-of-type(5) &__box--animated {
+        animation-delay: .8s;
     }
     
     &__icon {
@@ -79,6 +62,8 @@
         width: 3rem;
         height: auto;
     }
+
+
     
     &__date {
         display: inline-block;
@@ -89,17 +74,51 @@
         font-size: 5rem;
         font-weight: 700;
         color: rgba(199, 13, 18, .2);
-        animation-name: appearDate;
-        animation-duration: 3s;
+        opacity: 0;
+        
+        &--animated {
+            opacity: 0;
+            animation-name: appearDate;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
     }
-    
+
+// START TIMELINE HEADER STYLES
     &__head {
         display: inline-block;
         margin-left: 3rem;
         font-weight: 500;
         opacity: 0;
-        animation: fadeInRight;
-        animation-duration: .5s;
-        animation-fill-mode: forwards;
+        
+        
+        &--animated {
+            opacity: 0;
+            animation: fadeInRight;
+            animation-duration: .3s;
+            animation-fill-mode: forwards;
+        }
     }
+    
+    // START ANIMATION fadeInRight DELAY 
+    &:nth-of-type(1) &__head--animated {
+        animation-delay: .3s;
+    }
+    
+    &:nth-of-type(2) &__head--animated {
+        animation-delay: .6s;
+    }
+    
+    &:nth-of-type(3) &__head--animated {
+        animation-delay: .9s;
+    }
+    
+    &:nth-of-type(4) &__head--animated {
+        animation-delay: 1.2s;
+    }
+    
+    &:nth-of-type(5) &__head--animated {
+        animation-delay: 1.5s;
+    }
+// END TIMELINE HEADERS
 }
