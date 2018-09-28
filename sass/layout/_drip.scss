@@ -1,0 +1,148 @@
+.drip-container {
+  width: 300px;
+  height: 500px;
+  margin: 15px auto;
+  background: #6cd2ff;
+  //overflow: hidden;
+  position: relative;
+  //box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.liquid__background {
+  width: 120%;
+  height: 10px;
+  position: absolute;
+  top: -2%;
+  left: -10%;
+  background: #ccc;
+  border-radius: 10%;
+  animation: liquid 15s infinite;
+    //animation-fill-mode: forwards;
+}
+
+.liquid__container {
+  filter: url("#goo");
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.liquid__container .liquid__drip {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px 0px 0;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  animation: drip_one 15s infinite;
+        //animation-fill-mode: forwards;
+}
+.liquid__container .liquid__drip:nth-child(1) {
+  left: -34%;
+}
+.liquid__container .liquid__drip:nth-child(2) {
+  left: -1%;
+}
+.liquid__container .liquid__drip:nth-child(3) {
+  left: 12%;
+}
+.liquid__container .liquid__drip:nth-child(4) {
+  left: 25%;
+}
+.liquid__container .liquid__drip:nth-child(5) {
+  left: 38%;
+}
+.liquid__container .liquid__drip:nth-child(6) {
+  left: 51%;
+}
+.liquid__container .liquid__drip:nth-child(7) {
+  left: 64%;
+}
+.liquid__container .liquid__drip:nth-child(8) {
+  left: 77%;
+}
+.liquid__container .liquid__drip:nth-child(9) {
+  left: 90%;
+}
+.liquid__container .liquid__drip:nth-of-type(4n-7) {
+  width: 65px;
+  animation: drip_four 15s infinite;
+        //animation-fill-mode: forwards;
+}
+.liquid__container .liquid__drip:nth-of-type(3n-2) {
+  width: 26px;
+}
+.liquid__container .liquid__drip:nth-of-type(2) {
+  width: 22px;
+}
+.liquid__container .liquid__drip:nth-of-type(8) {
+  animation: drip_five 15s infinite;
+        //animation-fill-mode: forwards;
+}
+.liquid__container .liquid__drip:nth-of-type(4n+2) {
+  height: 56px;
+  animation: drip_two 15s infinite;
+        //animation-fill-mode: forwards;
+}
+.liquid__container .liquid__drip:nth-of-type(6n-2) {
+  height: 42px;
+  animation: drip_three 15s infinite;
+        //animation-fill-mode: forwards;
+}
+
+@keyframes drip_one {
+  from {
+    top: 0;
+  }
+  to {
+    top: 103%;
+  }
+}
+@keyframes drip_two {
+  from {
+    top: 0;
+  }
+  to {
+    top: 104%;
+  }
+}
+@keyframes drip_three {
+  from {
+    top: 0;
+    height: 52px;
+  }
+  to {
+    top: 102%;
+    height: 132px;
+  }
+}
+@keyframes drip_four {
+  from {
+    top: 0;
+    width: 65px;
+    height: 30px;
+  }
+  to {
+    top: 102%;
+    width: 75px;
+    height: 45px;
+  }
+}
+@keyframes drip_five {
+  from {
+    top: 0;
+    height: 30px;
+  }
+  to {
+    top: 102%;
+    height: 72px;
+  }
+}
+@keyframes liquid {
+  from {
+    height: 10px;
+  }
+  to {
+    height: 109%;
+  }
+}
