@@ -324,10 +324,11 @@ body {
     animation-delay: 1.5s; }
 
 .drip-container {
-  width: 300px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
   margin: 15px auto;
-  background: #6cd2ff;
+  background: #ccc;
+  z-index: 10;
   position: relative; }
 
 .liquid__background {
@@ -336,7 +337,7 @@ body {
   position: absolute;
   top: -2%;
   left: -10%;
-  background: #ccc;
+  background-image: linear-gradient(to right, #fecfd1, #9c0a0b);
   border-radius: 10%;
   animation: liquid 15s infinite; }
 
@@ -350,29 +351,28 @@ body {
   width: 30px;
   height: 30px;
   margin: 0 5px 0px 0;
-  background: red;
+  background: yellow;
   border-radius: 50%;
   position: absolute;
-  top: 0;
-  animation: drip_one 15s infinite; }
-
-.liquid__container .liquid__drip:nth-child(1) {
-  left: -34%; }
+  top: 0; }
 
 .liquid__container .liquid__drip:nth-child(2) {
-  left: -1%; }
+  left: -1%;
+  animation: drip_zero 15s infinite; }
 
 .liquid__container .liquid__drip:nth-child(3) {
-  left: 12%; }
+  left: 4%;
+  animation: drip_zero 15s infinite; }
 
 .liquid__container .liquid__drip:nth-child(4) {
-  left: 25%; }
+  left: 10%;
+  animation: drip_one 15s infinite; }
 
 .liquid__container .liquid__drip:nth-child(5) {
-  left: 38%; }
+  left: 14%; }
 
 .liquid__container .liquid__drip:nth-child(6) {
-  left: 51%; }
+  left: 19%; }
 
 .liquid__container .liquid__drip:nth-child(7) {
   left: 64%; }
@@ -383,38 +383,65 @@ body {
 .liquid__container .liquid__drip:nth-child(9) {
   left: 90%; }
 
-.liquid__container .liquid__drip:nth-of-type(4n-7) {
+/*
+.liquid__container .liquid__drip:nth-of-type(1) {
   width: 65px;
-  animation: drip_four 15s infinite; }
+  animation: drip_four 15s infinite;
+        //animation-fill-mode: forwards;
+}
 
 .liquid__container .liquid__drip:nth-of-type(3n-2) {
-  width: 26px; }
-
+  width: 26px;
+}
 .liquid__container .liquid__drip:nth-of-type(2) {
-  width: 22px; }
-
+  width: 22px;
+}
 .liquid__container .liquid__drip:nth-of-type(8) {
-  animation: drip_five 15s infinite; }
+  animation: drip_five 15s infinite;
+        //animation-fill-mode: forwards;
+}
 
 .liquid__container .liquid__drip:nth-of-type(4n+2) {
   height: 56px;
-  animation: drip_two 15s infinite; }
-
+  animation: drip_two 15s infinite;
+        //animation-fill-mode: forwards;
+}
 .liquid__container .liquid__drip:nth-of-type(6n-2) {
   height: 42px;
-  animation: drip_three 15s infinite; }
+  animation: drip_three 15s infinite;
+        //animation-fill-mode: forwards;
+}
 
-@keyframes drip_one {
-  from {
-    top: 0; }
-  to {
+*/
+@keyframes drip_zero {
+  0% {
+    top: -5%; }
+  100% {
     top: 103%; } }
 
+@keyframes drip_one {
+  0% {
+    top: 0;
+    height: 10px; }
+  20% {
+    height: 30px; }
+  50% {
+    height: 180px; }
+  100% {
+    top: 104%;
+    height: 190px; } }
+
 @keyframes drip_two {
-  from {
-    top: 0; }
-  to {
-    top: 104%; } }
+  0% {
+    top: 0;
+    height: 10px; }
+  20% {
+    height: 30px; }
+  50% {
+    height: 180px; }
+  100% {
+    top: 104%;
+    height: 190px; } }
 
 @keyframes drip_three {
   from {
@@ -425,11 +452,11 @@ body {
     height: 132px; } }
 
 @keyframes drip_four {
-  from {
-    top: 0;
+  0% {
+    top: 3%;
     width: 65px;
     height: 30px; }
-  to {
+  100% {
     top: 102%;
     width: 75px;
     height: 45px; } }
@@ -536,7 +563,7 @@ body {
       background-image: linear-gradient(to right, #f0f0f0, #dadada); }
     .header__flag--bottom {
       height: 55%;
-      background-image: linear-gradient(to right, #fecfd1, #9c0a0b); }
+      background: white; }
     .header__flag--blood {
       text-align: right; }
       .header__flag--blood-photo {

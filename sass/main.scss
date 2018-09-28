@@ -151,11 +151,12 @@ body {
         &--bottom {
             height: 55%;
             //position: relative;
-            background-image: linear-gradient(
-                to right, 
-                #fecfd1, 
-                //#d4213D,
-                #9c0a0b);
+            background: white;
+            //background-image: linear-gradient(
+            //    to right, 
+            //    #fecfd1, 
+            //    //#d4213D,
+            //    #9c0a0b);
         }
         
         &--blood {
