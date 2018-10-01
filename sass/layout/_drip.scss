@@ -59,7 +59,7 @@
   display: none;
 }
 .liquid__container .liquid__drip:nth-child(6) {
-  right: 16.5%;
+  right: 14.5%;
     background-color: #AC2A2C;
 
     animation: drip_small 8s 1;
@@ -98,7 +98,7 @@
 .liquid__container .liquid__drip:nth-child(11) {
     background-color:#B43B3C;
 
-    right: 25%;
+    right: 20%;
     width: 5rem;
     animation: drip_short_wide_1 8s 1;
      animation-fill-mode: forwards;
@@ -107,7 +107,7 @@
 .liquid__container .liquid__drip:nth-child(12) {
     background-color: #B03334;
 
-    right: 20%;
+    right: 18%;
     width: 5rem;
     animation: drip_medium_1 8s 1;
      animation-fill-mode: forwards;
@@ -193,7 +193,7 @@
     }
    
   100% {
-      top: 95%;
+      top: 100%;
       height: 5rem;
       width: 7rem;
     }
