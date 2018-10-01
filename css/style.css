@@ -332,14 +332,15 @@ body {
   position: relative; }
 
 .liquid__background {
-  width: 120%;
+  width: 100%;
   height: 10px;
   position: absolute;
   top: -2%;
-  left: -10%;
+  left: 0%;
+  overflow: hidden;
   background-image: linear-gradient(to right, #fecfd1, #9c0a0b);
-  border-radius: 10%;
-  animation: liquid 15s infinite; }
+  animation: liquid 8s 1;
+  animation-fill-mode: forwards; }
 
 .liquid__container {
   filter: url("#goo");
@@ -351,105 +352,129 @@ body {
   width: 30px;
   height: 30px;
   margin: 0 5px 0px 0;
-  background: yellow;
   border-radius: 50%;
   position: absolute;
-  top: 0; }
+  top: 0;
+  color: white; }
 
 .liquid__container .liquid__drip:nth-child(2) {
-  left: -1%;
-  animation: drip_zero 15s infinite; }
+  display: none; }
 
 .liquid__container .liquid__drip:nth-child(3) {
-  left: 4%;
-  animation: drip_zero 15s infinite; }
+  display: none; }
 
 .liquid__container .liquid__drip:nth-child(4) {
-  left: 10%;
-  animation: drip_one 15s infinite; }
+  display: none; }
 
 .liquid__container .liquid__drip:nth-child(5) {
-  left: 14%; }
+  display: none; }
 
 .liquid__container .liquid__drip:nth-child(6) {
-  left: 19%; }
+  right: 16.5%;
+  background-color: #AC2A2C;
+  animation: drip_small 8s 1;
+  animation-fill-mode: forwards; }
 
 .liquid__container .liquid__drip:nth-child(7) {
-  left: 64%; }
+  right: -.3%;
+  background-color: #9C0A0B;
+  animation: drip_long 8s 1;
+  animation-fill-mode: forwards; }
 
 .liquid__container .liquid__drip:nth-child(8) {
-  left: 77%; }
+  right: 9%;
+  background-color: #A01213;
+  animation: drip_medium 8s 1;
+  animation-fill-mode: forwards; }
 
 .liquid__container .liquid__drip:nth-child(9) {
-  left: 90%; }
+  background-color: #A01213;
+  right: 6%;
+  width: 5rem;
+  animation: drip_short_wide 8s 1;
+  animation-fill-mode: forwards; }
 
-/*
-.liquid__container .liquid__drip:nth-of-type(1) {
-  width: 65px;
-  animation: drip_four 15s infinite;
-        //animation-fill-mode: forwards;
-}
+.liquid__container .liquid__drip:nth-child(10) {
+  background-color: #A01213;
+  right: 2.5%;
+  width: 7rem;
+  animation: drip_short_base 8s 1;
+  animation-fill-mode: forwards; }
 
-.liquid__container .liquid__drip:nth-of-type(3n-2) {
-  width: 26px;
-}
-.liquid__container .liquid__drip:nth-of-type(2) {
-  width: 22px;
-}
-.liquid__container .liquid__drip:nth-of-type(8) {
-  animation: drip_five 15s infinite;
-        //animation-fill-mode: forwards;
-}
+.liquid__container .liquid__drip:nth-child(11) {
+  background-color: #B43B3C;
+  right: 25%;
+  width: 5rem;
+  animation: drip_short_wide_1 8s 1;
+  animation-fill-mode: forwards; }
 
-.liquid__container .liquid__drip:nth-of-type(4n+2) {
-  height: 56px;
-  animation: drip_two 15s infinite;
-        //animation-fill-mode: forwards;
-}
-.liquid__container .liquid__drip:nth-of-type(6n-2) {
-  height: 42px;
-  animation: drip_three 15s infinite;
-        //animation-fill-mode: forwards;
-}
+.liquid__container .liquid__drip:nth-child(12) {
+  background-color: #B03334;
+  right: 20%;
+  width: 5rem;
+  animation: drip_medium_1 8s 1;
+  animation-fill-mode: forwards; }
 
-*/
-@keyframes drip_zero {
+@keyframes drip_short_base {
   0% {
     top: -5%; }
   100% {
-    top: 103%; } }
+    top: 97%;
+    height: 7rem;
+    width: 4rem; } }
 
-@keyframes drip_one {
+@keyframes drip_short_wide {
   0% {
-    top: 0;
-    height: 10px; }
-  20% {
-    height: 30px; }
-  50% {
-    height: 180px; }
+    top: -5%;
+    width: 10rem;
+    height: 2rem; }
   100% {
-    top: 104%;
-    height: 190px; } }
-
-@keyframes drip_two {
-  0% {
-    top: 0;
-    height: 10px; }
-  20% {
-    height: 30px; }
-  50% {
-    height: 180px; }
-  100% {
-    top: 104%;
-    height: 190px; } }
-
-@keyframes drip_three {
-  from {
-    top: 0;
-    height: 52px; }
-  to {
     top: 102%;
-    height: 132px; } }
+    height: 5rem;
+    width: 9rem; } }
+
+@keyframes drip_long {
+  0% {
+    top: 0;
+    height: 10px; }
+  100% {
+    top: 102%;
+    height: 250px;
+    width: 2.5rem; } }
+
+@keyframes drip_medium {
+  0% {
+    top: 0;
+    height: 0px; }
+  100% {
+    top: 104%;
+    height: 90px;
+    width: 35px; } }
+
+@keyframes drip_medium_1 {
+  0% {
+    top: 0;
+    height: 0px; }
+  100% {
+    top: 94%;
+    height: 16rem;
+    width: 3rem; } }
+
+@keyframes drip_short_wide_1 {
+  0% {
+    top: -5%;
+    width: 10rem;
+    height: 2rem; }
+  100% {
+    top: 95%;
+    height: 5rem;
+    width: 7rem; } }
+
+@keyframes drip_small {
+  from {
+    top: 0; }
+  to {
+    top: 106%; } }
 
 @keyframes drip_four {
   0% {
@@ -470,9 +495,9 @@ body {
     height: 72px; } }
 
 @keyframes liquid {
-  from {
-    height: 10px; }
-  to {
+  0% {
+    height: 0px; }
+  100% {
     height: 109%; } }
 
 .section-about {
