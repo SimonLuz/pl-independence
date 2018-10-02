@@ -1,3 +1,57 @@
+//======================================
+// HEADER ANIMATIONS - .header__primary--container
+//======================================
+
+
+
+@keyframes headerStrike {
+     0% {
+        width: 0;
+        opacity: 1;
+    }
+    
+    100% {
+        width: 63rem;
+        opacity: 1;
+    }
+}
+
+@keyframes headerAppear {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes headerStamp {
+    0% {
+        opacity: 0;
+        
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+//======================================
+// HEADER-DRIP ANIMATIONS 
+//======================================
+
+
+//======================================
+// TIMELINE SECTION ANIMATIONS 
+//======================================
+
+
+
+
+//======================================
+// TIMELINE SECTION ANIMATIONS 
+//======================================
 @keyframes fadeInLeft {
     0% {
         opacity: 0;
