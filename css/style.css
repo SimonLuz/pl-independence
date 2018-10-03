@@ -72,6 +72,9 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 2rem !important; }
 
+.u-margin-zero {
+  margin: 0 !important; }
+
 @keyframes headerStrike {
   0% {
     width: 0;
@@ -528,44 +531,80 @@ body {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     z-index: 20; }
 
-.timeline-container {
+.timeline-axis {
   position: relative;
   padding-top: 3rem;
   padding-bottom: 3rem; }
-  .timeline-container::before {
+  .timeline-axis::before {
     position: absolute;
+    left: 50%;
     content: "";
     width: 2px;
     background-color: #555;
     height: 100%; }
 
-.timeline-container ul {
-  list-style: none; }
-
 .timeline-item {
   position: relative;
-  margin: 4rem 0; }
+  margin: 4rem 0;
+  /*
+        &--animated {
+            opacity: 0;
+            animation-name: fadeInLeft;
+            animation-duration: .4s;
+            animation-fill-mode: forwards;
+        } 
+    }
+//ANIMATION fadeInLeft DELAY - START
+    &:nth-of-type(2) &__box--animated {
+        animation-delay: .2s;
+    }
+    
+    &:nth-of-type(3) &__box--animated {
+        animation-delay: .4s;
+    }
+    
+    &:nth-of-type(4) &__box--animated {
+        animation-delay: .6s;
+    }
+    
+    &:nth-of-type(5) &__box--animated {
+        animation-delay: .8s;
+    }*/
+  /*
+        &--animated {
+            opacity: 0;
+            animation: fadeInRight;
+            animation-duration: .3s;
+            animation-fill-mode: forwards;
+        } 
+    }
+    
+    // START ANIMATION fadeInRight DELAY 
+    &:nth-of-type(1) &__head--animated {
+        animation-delay: .3s;
+    }
+    
+    &:nth-of-type(2) &__head--animated {
+        animation-delay: .6s;
+    }
+    
+    &:nth-of-type(3) &__head--animated {
+        animation-delay: .9s;
+    }
+    
+    &:nth-of-type(4) &__head--animated {
+        animation-delay: 1.2s;
+    }
+    
+    &:nth-of-type(5) &__head--animated {
+        animation-delay: 1.5s;
+    } */ }
   .timeline-item__box {
     display: inline-block;
     position: absolute;
-    left: -1.8rem;
-    top: -.6rem;
+    left: 48%;
     background-color: #fff;
-    padding: .5rem;
-    opacity: 0; }
-    .timeline-item__box--animated {
-      opacity: 0;
-      animation-name: fadeInLeft;
-      animation-duration: .4s;
-      animation-fill-mode: forwards; }
-  .timeline-item:nth-of-type(2) .timeline-item__box--animated {
-    animation-delay: .2s; }
-  .timeline-item:nth-of-type(3) .timeline-item__box--animated {
-    animation-delay: .4s; }
-  .timeline-item:nth-of-type(4) .timeline-item__box--animated {
-    animation-delay: .6s; }
-  .timeline-item:nth-of-type(5) .timeline-item__box--animated {
-    animation-delay: .8s; }
+    padding: .5rem; }
   .timeline-item__icon {
     display: block;
     width: 3rem;
@@ -579,32 +618,22 @@ body {
     font-size: 5rem;
     font-weight: 700;
     color: rgba(199, 13, 18, 0.2);
-    opacity: 0; }
-    .timeline-item__date--animated {
-      opacity: 0;
-      animation-name: appearDate;
-      animation-duration: 3s;
-      animation-fill-mode: forwards; }
+    /*
+        &--animated {
+            opacity: 0;
+            animation-name: appearDate;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        } */ }
   .timeline-item__head {
-    display: inline-block;
-    margin-left: 3rem;
-    font-weight: 500;
-    opacity: 0; }
-    .timeline-item__head--animated {
-      opacity: 0;
-      animation: fadeInRight;
-      animation-duration: .3s;
-      animation-fill-mode: forwards; }
-  .timeline-item:nth-of-type(1) .timeline-item__head--animated {
-    animation-delay: .3s; }
-  .timeline-item:nth-of-type(2) .timeline-item__head--animated {
-    animation-delay: .6s; }
-  .timeline-item:nth-of-type(3) .timeline-item__head--animated {
-    animation-delay: .9s; }
-  .timeline-item:nth-of-type(4) .timeline-item__head--animated {
-    animation-delay: 1.2s; }
-  .timeline-item:nth-of-type(5) .timeline-item__head--animated {
-    animation-delay: 1.5s; }
+    display: block;
+    font-weight: 500; }
+    .timeline-item__head--left {
+      margin-right: calc(50% + 5rem);
+      text-align: right; }
+    .timeline-item__head--right {
+      left: calc(50% + 4rem);
+      top: .5rem; }
 
 .drip-container {
   width: 100%;
