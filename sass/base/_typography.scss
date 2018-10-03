@@ -1,5 +1,6 @@
 .heading-secondary {
     font-size: 3.5rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
     display: block;
     font-weight: 300;
@@ -18,11 +19,15 @@
 .long-copy {
     display: inline-block;
     max-width: 70rem;
-    text-align: center;
+    text-align: justify;
 }
 
 .heading-tertiary {
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 500;
     margin-bottom: 1.5rem;
+}
+
+.span-bold {
+    font-weight: 500;
 }

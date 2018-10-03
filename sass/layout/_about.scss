@@ -1,0 +1,28 @@
+.about-intro {
+    @include clearfix;
+    max-width: 80rem;
+    margin: 0 auto;
+    
+    &__par {
+        float: left;
+        width: 60%;
+        font-size: 1.8rem;
+        text-align: left;
+    }
+    
+    &__img {
+        position: relative;
+        max-width: 30rem;
+        float: left;
+        width: 40%;
+        padding-left: 2rem;
+    }
+    
+    &__photo {
+        position: absolute;
+        top: -7rem;
+        left: 5rem;
+        display: block;
+        width: 100%;
+    }
+}
