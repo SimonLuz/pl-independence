@@ -1,3 +1,4 @@
+
 // TIMELINE 'AXIS' START
 .timeline-axis {
     position: relative;
@@ -11,6 +12,14 @@
         width: 2px;
         background-color: #555;
         height: 100%;
+    }
+    
+    &__date-top {
+        width: 100%;
+        text-align: center;
+        font-family: serif;
+        font-size: 4rem;
+        font-weight: 700;
     }
 }
 // TIMELINE 'AXIS' STYLES END 
@@ -29,10 +38,14 @@
     &__box {
         display: inline-block;
         position: absolute;
-        left:48%;
+        left:49%;
         background-color: #fff;
         padding: .5rem;
         //opacity: 0;
+        
+        &--cross {
+            transform: rotate(45deg);
+        }
     }
         
         /*
@@ -64,7 +77,7 @@
         display: block;
         width: 3rem;
         height: auto;
-       //transform: rotate(25deg);
+       
     }
     
    
@@ -76,7 +89,17 @@
         font-size: 3rem;
         font-weight: 700;
         color: rgba(199, 13, 18, .2);
-        //opacity: 0;
+        opacity: 0;
+        transform: scale(1);
+        transition: all .4s;
+        
+        &:hover {
+            color: rgba(199, 13, 18, .8);
+        }
+        
+        &:hover + .timeline-item__box {
+            transform: scale(1.3) ;
+        }
         
         &--right {
             left: calc(50% + 4rem);
@@ -88,20 +111,18 @@
             top: -2.6rem;
         }
         
-        /*
         &--animated {
             opacity: 0;
             animation-name: appearDate;
             animation-duration: 3s;
             animation-fill-mode: forwards;
-        } */
+        } 
     }
 
-// START TIMELINE HEADERS STYLES
+// START TIMELINE HEADERS & HEADER ANIMATION STYLES
     &__head {
-        //display: inline-block;
         font-weight: 500;
-        //opacity: 0;
+        opacity: 0;
         
         
         &--left {
@@ -122,7 +143,6 @@
             position: relative;
             left: calc(50% + 4rem);
             top: .5rem;
-            opacity: 0;
         }
         
         &--animated-right {
@@ -163,3 +183,9 @@
     } */
 // END TIMELINE HEADERS
 }
+
+/*
+.timeline-item__date:hover + .timeline-item__box {
+            background-color: red;
+        }
+*/

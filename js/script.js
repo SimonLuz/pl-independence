@@ -1,28 +1,41 @@
-/*
+
 $(document).ready(function() {
 
+//TIMELINE HEADER LEFT & RIGHT WAYPOINTS
     $('.js--timeline-container').waypoint(function(direction) {
-        $('.timeline-item__head').addClass('timeline-item__head--animated');
+        $('.timeline-item__head--right').addClass('timeline-item__head--animated-right');
     }, {
-       offset:'50%'                                    
+       offset:'10%'                                    
     })
     
     $('.js--timeline-container').waypoint(function(direction) {
-        $('.timeline-item__box').addClass('timeline-item__box--animated');
+        $('.timeline-item__head--left').addClass('timeline-item__head--animated-left');
     }, {
-        offset:'50%'
+        offset: '10%'
     })
-    
+   
+// TIMELINE DATE WAYPOINT    
     $('.js--timeline-container').waypoint(function(direction) {
         $('.timeline-item__date').addClass('timeline-item__date--animated');
     }, {
-        offset:'50%'
+        offset:'10%'
     })
-
-    
 })
 
+
+/*
+// JQuery: CHANGING STATE of another element ON HOVER 
+
+PROBLEM: JQuery LEAVES the element in the 
+
+$(document).ready(function(){
+     $(".timeline-item__date").mouseover(function(){
+         $(".timeline-item__date:hover").prev().css("background-color", "red");
+     });
+});
 */
+
+
 
 
 /*
