@@ -13,14 +13,17 @@
         height: 100%;
     }
 }
-// TIMELINE 'AXIS' END 
+// TIMELINE 'AXIS' STYLES END 
 
 
+// START STYLES FOR THE CONTAINER FOR EACH DATE ITEM
 .timeline-item {
     position: relative;
-    margin: 4rem 0;
+    margin-bottom: 6rem;
     
-    
+    &:first-child {
+        margin-top: 6rem;
+    }
 
 // START TIMELINE ICON STYLES
     &__box {
@@ -30,7 +33,6 @@
         background-color: #fff;
         padding: .5rem;
         //opacity: 0;
-        
     }
         
         /*
@@ -62,20 +64,29 @@
         display: block;
         width: 3rem;
         height: auto;
+       //transform: rotate(25deg);
     }
-
-
     
+   
+// DATES STYLES & ANIMATIONS
     &__date {
         display: inline-block;
         position: absolute;
-        top: -4.5rem;
-        left: 3rem;
         font-family: serif;
-        font-size: 5rem;
+        font-size: 3rem;
         font-weight: 700;
         color: rgba(199, 13, 18, .2);
         //opacity: 0;
+        
+        &--right {
+            left: calc(50% + 4rem);
+            top: -2.6rem;
+        }
+        
+        &--left {
+            left: calc(50% - 11rem);
+            top: -2.6rem;
+        }
         
         /*
         &--animated {
@@ -86,24 +97,39 @@
         } */
     }
 
-// START TIMELINE HEADER STYLES
+// START TIMELINE HEADERS STYLES
     &__head {
-        display: block;
+        //display: inline-block;
         font-weight: 500;
         //opacity: 0;
         
+        
         &--left {
+            display: block;
             margin-right: calc(50% + 5rem);
+            padding-top: .4rem;
             text-align: right;
         }
         
-        &--right {
-            //position: absolute;
-            left: calc(50% + 4rem);
-            top: .5rem;
+        &--animated-left {
+            animation: fadeInLeft;
+            animation-duration: .8s;
+            animation-fill-mode: forwards;
         }
         
+        &--right {
+            display: inline-block;
+            position: relative;
+            left: calc(50% + 4rem);
+            top: .5rem;
+            opacity: 0;
+        }
         
+        &--animated-right {
+            animation: fadeInRight;
+            animation-duration: .8s;
+            animation-fill-mode: forwards;
+        }
     }
         
         /*

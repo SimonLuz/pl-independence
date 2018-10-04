@@ -1,4 +1,4 @@
-
+/*
 $(document).ready(function() {
 
     $('.js--timeline-container').waypoint(function(direction) {
@@ -21,6 +21,9 @@ $(document).ready(function() {
 
     
 })
+
+*/
+
 
 /*
     $('.js--timeline-container').waypoint(function(direction) {

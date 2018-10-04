@@ -55,7 +55,7 @@
 @keyframes fadeInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-600%);
+        transform: translateX(-100%);
     }
     
     100% {
@@ -68,7 +68,7 @@
 @keyframes fadeInRight {
     0% {
         opacity: 0;
-        transform: translateX(150%);
+        transform: translateX(100%);
     }
     
     100% {
