@@ -43,19 +43,20 @@
         padding: .5rem;
         //opacity: 0;
         
+        
         &--cross {
             transform: rotate(45deg);
         }
-    }
+
         
         /*
         &--animated {
-            opacity: 0;
-            animation-name: fadeInLeft;
+            animation-name: iconTransform;
             animation-duration: .4s;
             animation-fill-mode: forwards;
-        } 
+        }*/ 
     }
+/*
 //ANIMATION fadeInLeft DELAY - START
     &:nth-of-type(2) &__box--animated {
         animation-delay: .2s;
@@ -90,7 +91,7 @@
         font-weight: 700;
         color: rgba(199, 13, 18, .2);
         opacity: 0;
-        transform: scale(1);
+        //transform: scale(1);
         transition: all .4s;
         
         &:hover {

@@ -117,6 +117,12 @@ body {
   100% {
     opacity: 1; } }
 
+@keyframes iconTransform {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.4); } }
+
 .about-icon {
   text-align: center;
   height: 10rem; }
@@ -553,13 +559,6 @@ body {
   position: relative;
   margin-bottom: 6rem;
   /*
-        &--animated {
-            opacity: 0;
-            animation-name: fadeInLeft;
-            animation-duration: .4s;
-            animation-fill-mode: forwards;
-        } 
-    }
 //ANIMATION fadeInLeft DELAY - START
     &:nth-of-type(2) &__box--animated {
         animation-delay: .2s;
@@ -612,7 +611,13 @@ body {
     position: absolute;
     left: 49%;
     background-color: #fff;
-    padding: .5rem; }
+    padding: .5rem;
+    /*
+        &--animated {
+            animation-name: iconTransform;
+            animation-duration: .4s;
+            animation-fill-mode: forwards;
+        }*/ }
     .timeline-item__box--cross {
       transform: rotate(45deg); }
   .timeline-item__icon {
@@ -627,7 +632,6 @@ body {
     font-weight: 700;
     color: rgba(199, 13, 18, 0.2);
     opacity: 0;
-    transform: scale(1);
     transition: all .4s; }
     .timeline-item__date:hover {
       color: rgba(199, 13, 18, 0.8); }

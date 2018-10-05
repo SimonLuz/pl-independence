@@ -20,10 +20,32 @@ $(document).ready(function() {
     }, {
         offset:'10%'
     })
+/*
+// svastika & commy ICON ANIMATION STYLES --- STILL ANIMATES AAAAAAALLLLLLLL ICONS, NOT JUST THE PARENT
+    $('.timeline-item__date').hover(function() {
+        $('.timeline-item__date').next().toggleClass('timeline-item__box--animated');
+    })
+*/  
+    
+    /* $('.timeline-item__box').mouseover(function() {
+        $(this).css("transform", 'scale(1.4)');
+    })
+     
+    $('.timeline-item__box').mouseout(function() {
+        $(this).css("transform", 'scale(1)');
+    })
+    */
 })
 
+    
+    /*
+$(document).ready(function() {
+    
+    $('.timeline-item__box').click(function() {
+        $(this).css("color", 'blue');
+    })
 
-/*
+
 // JQuery: CHANGING STATE of another element ON HOVER 
 
 PROBLEM: JQuery LEAVES the element in the 
