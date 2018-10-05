@@ -1,3 +1,20 @@
+.timeline__date-top,
+.timeline__date-bottom {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-family: serif;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: -3rem;
+    }
+
+.timeline__date-bottom {
+    margin: 3rem auto;
+}
+
 
 // TIMELINE 'AXIS' START
 .timeline-axis {
@@ -14,13 +31,7 @@
         height: 100%;
     }
     
-    &__date-top {
-        width: 100%;
-        text-align: center;
-        font-family: serif;
-        font-size: 4rem;
-        font-weight: 700;
-    }
+    
 }
 // TIMELINE 'AXIS' STYLES END 
 
@@ -38,7 +49,7 @@
     &__box {
         display: inline-block;
         position: absolute;
-        left:49%;
+        left: calc(50% - 2rem);
         background-color: #fff;
         padding: .5rem;
         transform: scale(1);
