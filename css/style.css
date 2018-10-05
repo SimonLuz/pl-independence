@@ -612,6 +612,8 @@ body {
     left: 49%;
     background-color: #fff;
     padding: .5rem;
+    transform: scale(1);
+    transition: all .4s;
     /*
         &--animated {
             animation-name: iconTransform;
