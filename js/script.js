@@ -5,21 +5,25 @@ $(document).ready(function() {
     $('.js--timeline-container').waypoint(function(direction) {
         $('.timeline-item__head--right').addClass('timeline-item__head--animated-right');
     }, {
-       offset:'10%'                                    
+       offset:'30%'                                    
     })
     
     $('.js--timeline-container').waypoint(function(direction) {
         $('.timeline-item__head--left').addClass('timeline-item__head--animated-left');
     }, {
-        offset: '10%'
+        offset: '30%'
     })
    
 // TIMELINE DATE WAYPOINT    
     $('.js--timeline-container').waypoint(function(direction) {
         $('.timeline-item__date').addClass('timeline-item__date--animated');
     }, {
-        offset:'10%'
+        offset:'30%'
     })
+    
+    
+    
+    
 /*
 // svastika & commy ICON ANIMATION STYLES --- STILL ANIMATES AAAAAAALLLLLLLL ICONS, NOT JUST THE PARENT
     $('.timeline-item__date').hover(function() {

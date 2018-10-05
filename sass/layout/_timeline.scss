@@ -44,7 +44,7 @@
     &:first-child {
         margin-top: 6rem;
     }
-
+    
 // START TIMELINE ICON STYLES
     &__box {
         display: inline-block;
@@ -54,8 +54,6 @@
         padding: .5rem;
         transform: scale(1);
         transition: all .4s;
-        //opacity: 0;
-        
         
         &--cross {
             transform: rotate(45deg);
@@ -138,7 +136,6 @@
         font-weight: 500;
         opacity: 0;
         
-        
         &--left {
             display: block;
             margin-right: calc(50% + 5rem);
@@ -164,6 +161,21 @@
             animation-duration: .8s;
             animation-fill-mode: forwards;
         }
+    }
+}
+
+
+.timeline-item__prewar {
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 4px 0;
+    }
+
+
+.timeline-item__war {
+    width: 100%;
+    background-color: #eee;
+    padding: 4px 0;
     }
         
         /*
@@ -196,7 +208,6 @@
         animation-delay: 1.5s;
     } */
 // END TIMELINE HEADERS
-}
 
 /*
 .timeline-item__date:hover + .timeline-item__box {
