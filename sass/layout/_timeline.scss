@@ -114,13 +114,13 @@
         }
         
         &--right {
-            left: calc(50% + 4rem);
-            top: -2.6rem;
+            left: calc(50% - 10rem);
+            top: -.6rem;
         }
         
         &--left {
-            left: calc(50% - 11rem);
-            top: -2.6rem;
+            left: calc(50% + 4rem);
+            top: -.6rem;
         }
         
         &--animated {
@@ -162,22 +162,50 @@
             animation-fill-mode: forwards;
         }
     }
+    
+    &__par {
+        max-width: 30rem;
+        font-size: 1.3rem;
+        line-height: 1.1;
+        background-color: #ddd;
+        padding: 2rem;
+        border-radius: 3px;
+        transform: scale(1);
+        transform-origin: top;
+        
+        &:hover {
+                transform: scale(1.5);
+            }
+        
+        &--left {
+            display: inline-block;
+            position: relative;
+            right: calc(-50% + 35rem);
+        }
+        
+        
+    }
 }
 
 
 .timeline-item__prewar {
     width: 100%;
-    background-color: #f4f4f4;
+    background-color: #fbfbfb;
     padding: 4px 0;
     }
 
 
 .timeline-item__war {
     width: 100%;
-    background-color: #eee;
+    background-color: #f9f9f9;
     padding: 4px 0;
     }
         
+.timeline-item__postwar {
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 4px 0;
+    }
         /*
         &--animated {
             opacity: 0;
