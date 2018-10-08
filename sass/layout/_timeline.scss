@@ -50,6 +50,7 @@
         display: inline-block;
         position: absolute;
         left: calc(50% - 2rem);
+        top: .2rem;
         background-color: #fff;
         padding: .5rem;
         transform: scale(1);
@@ -102,16 +103,16 @@
         font-weight: 700;
         color: rgba(199, 13, 18, .2);
         opacity: 0;
-        //transform: scale(1);
+        transform: scale(1);
         transition: all .4s;
         
-        &:hover {
-            color: rgba(199, 13, 18, .8);
-        }
+       // &:hover {
+        //    color: rgba(199, 13, 18, .8);
+        //}
         
-        &:hover + .timeline-item__box {
-            transform: scale(1.3) ;
-        }
+        //&:hover + .timeline-item__box {
+        //    transform: scale(1.3) ;
+        //}
         
         &--right {
             left: calc(50% - 10rem);
@@ -133,11 +134,36 @@
 
 // START TIMELINE HEADERS & HEADER ANIMATION STYLES
     &__head {
+        display: inline-block;
         font-weight: 500;
         opacity: 0;
+        transform: scale(1);
+        transition: all .4s;
+        
+        &:hover {
+            cursor: default;
+            transform: scale(1.3);
+            color: $color-flag-red-dark;
+        }
+        
+        &:hover + .timeline-item__date {
+            color: rgba($color-flag-red-dark, .8);
+            transform: scale(1.3);
+        }
+        
+        
+         &:hover ~ .timeline-item__box {
+            transform: scale(1.4) ;
+             z-index: 20;
+        }
+        &:hover ~ .timeline-item__par {
+            transform: scale(1.4);
+            background-color: rgba($color-flag-red-light, .5);
+             z-index: 20;
+        }
         
         &--left {
-            display: block;
+            //display: block;
             margin-right: calc(50% + 5rem);
             padding-top: .4rem;
             text-align: right;
@@ -167,15 +193,17 @@
         max-width: 30rem;
         font-size: 1.3rem;
         line-height: 1.1;
-        background-color: #ddd;
+        background-color: rgba(230, 230, 230, .6);
         padding: 2rem;
+        box-shadow: 0 3px 10px rgba(0,0,0, .2);
         border-radius: 3px;
         transform: scale(1);
         transform-origin: top;
+        transition: all .4s;
         
-        &:hover {
-                transform: scale(1.5);
-            }
+        //&:hover {
+          //      transform: scale(1.5);
+            //}
         
         &--left {
             display: inline-block;
