@@ -143,6 +143,7 @@
         
         span {
             font-weight: 300;
+            font-size: 1.5rem;
         }        
         
         &:hover {
@@ -155,7 +156,6 @@
             color: rgba($color-flag-red-dark, .8);
             transform: scale(1.3);
         }
-        
         
          &:hover ~ .timeline-item__box {
             transform: scale(1.4) ;
@@ -215,16 +215,11 @@
             position: relative;
             right: calc(-50% + 35rem);
         }
-        
-        
     }
-    
-    
 }
 
+// POPUP WINDOW STYLES
 .timeline-popup {
-    //@include clearfix;
-
     position: relative;
     width: 100%;
     height: 100vh;
@@ -242,6 +237,30 @@
         visibility: visible;
     }
     
+    &:target &__content {
+         transform: translate(-50%, -50%) scale(1);   
+    }
+    
+    &__close {
+        &:link,
+        &:visited {
+            display: inline-block;
+            color: $color-text-gray-dark;
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            line-height: 1;
+            font-size: 3rem;
+            text-decoration: none;
+            transition: all .3s;
+            font-weight: 300;
+        }
+        
+        &:hover {
+            font-weight: 500;
+        }
+    }
+    
     &__content {
         @include absCenter;
         
@@ -252,8 +271,10 @@
         box-shadow: 0 2rem 4rem rgba(0,0,0, .3);
         overflow: hidden;
         display: table;
+        transform: translate(-50%, -50%) scale(.3);
+        transition: all .3s .4s;
     }
-        
+    
     &__left {
         width: 33.33333%;
         display: table-cell;
@@ -275,7 +296,9 @@
         
     }
 }
-    
+
+
+// TIMELINE PHOTOS LINK FOR POPUP WINDOW
 .timeline-link {
     position: relative;
     width: 200px;
@@ -317,6 +340,7 @@
         
     }
     
+// CLEAR PHOTO BUTTON STYLES
     &__btn {
         
         &--clear {
@@ -353,6 +377,7 @@
     }
 }
 
+// TRANSITION OF THE DESCRIPTION PARAGRAPH & PHOTO-LINK
 .timeline-item__par,
 .timeline-link {
     opacity: 0;
@@ -363,6 +388,8 @@
 
    
 
+
+// 3 SEPARATE COLOR SECTIONS OF THE TIMELINE AXIS
 .timeline-item__prewar {
     width: 100%;
     background-color: #fbfbfb;
@@ -381,6 +408,10 @@
     background-color: #f3f3f3;
     padding: 4px 0;
     }
+
+
+
+
         /*
         &--animated {
             opacity: 0;
