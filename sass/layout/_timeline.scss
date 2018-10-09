@@ -1,25 +1,33 @@
-.timeline__date-top,
-.timeline__date-bottom {
-    width: 100%;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    font-family: Georgia;
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1;
-    margin-bottom: -3rem;
+.timeline-date {
+    
+    &__container {
+         text-align: center;
     }
-
-.timeline__date-bottom {
-    margin: 3rem auto;
+    
+    &__top,
+    &__bottom {
+        display: inline-block;
+        text-align: center;
+        font-family: Georgia;
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: -3rem;
+    }
+    
+    &__top {
+        border-bottom: 2px solid black;
+    }
+    
+    &__bottom {
+        border-top: 2px solid black;
+    }
 }
 
 
 // TIMELINE 'AXIS' START
 .timeline-axis {
     position: relative;
-    padding-top: 3rem;
     padding-bottom: 3rem;
     
     &::before {
@@ -215,6 +223,13 @@
             position: relative;
             right: calc(-50% + 35rem);
         }
+        
+        &--right {
+            //display: inline-block;
+            position: relative;
+            left: calc(50% + 4rem);
+            margin-top: 1rem;
+        }
     }
 }
 
@@ -231,12 +246,14 @@
     opacity: 0;
     visibility: hidden;
     transition: all .4s;
-    
+
+// :target - STYLE FOR THE TRANSITION OF ENTIRE POPUP
     &:target {
         opacity: 1;
         visibility: visible;
     }
-    
+
+// :target &__content - STYLE FOR THE TRANSITION OF THE CONTENT WINDOW ITSELF
     &:target &__content {
          transform: translate(-50%, -50%) scale(1);   
     }
@@ -392,20 +409,19 @@
 // 3 SEPARATE COLOR SECTIONS OF THE TIMELINE AXIS
 .timeline-item__prewar {
     width: 100%;
-    background-color: #fbfbfb;
+    background-color: #fafafa;
     padding: 4px 0;
     }
 
-
 .timeline-item__war {
     width: 100%;
-    background-color: #f9f9f9;
+    background-color: #f7f7f7;
     padding: 4px 0;
     }
         
 .timeline-item__postwar {
     width: 100%;
-    background-color: #f3f3f3;
+    background-color: #f2f2f2;
     padding: 4px 0;
     }
 
