@@ -407,6 +407,14 @@
 
 
 // 3 SEPARATE COLOR SECTIONS OF THE TIMELINE AXIS
+
+ .timeline-item__tag {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+        
+        transform: rotate(270deg);
+    }
 .timeline-item__prewar {
     width: 100%;
     background-color: #fafafa;
