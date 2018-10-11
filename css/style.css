@@ -332,6 +332,112 @@ body {
         opacity: 1;
     }
 */
+.timeline-popup {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s; }
+  .timeline-popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .timeline-popup:target .timeline-popup__content {
+    transform: translate(-50%, -50%) scale(1); }
+  .timeline-popup__close:link, .timeline-popup__close:visited {
+    display: inline-block;
+    color: #3e3e3e;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    line-height: 1;
+    font-size: 3rem;
+    text-decoration: none;
+    transition: all .3s;
+    font-weight: 300; }
+  .timeline-popup__close:hover {
+    font-weight: 500; }
+  .timeline-popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    background-color: #fff;
+    height: 40rem;
+    border-radius: 3px;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: table;
+    transform: translate(-50%, -50%) scale(0.3);
+    transition: all .3s .4s; }
+  .timeline-popup__left {
+    width: 33.33333%;
+    display: table-cell; }
+  .timeline-popup__right {
+    width: 66.66666%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+  .timeline-popup__img {
+    display: block;
+    width: 100%; }
+
+.timeline-link {
+  position: relative;
+  width: 200px;
+  height: 120px;
+  background-color: red;
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/polish-soviet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  transition: all 1s;
+  z-index: 100;
+  margin: 1rem 0; }
+  .timeline-link:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/polish-soviet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .timeline-link__right {
+    margin-left: calc(50% + 4rem); }
+  .timeline-link__left {
+    display: inline-block;
+    right: calc(-50% + 25rem); }
+  .timeline-link__btn--clear {
+    display: inline-block;
+    text-decoration: none;
+    font-family: sans-serif;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 3px;
+    font-size: 16px;
+    margin-top: 35px;
+    transition: all .5s;
+    text-transform: uppercase; }
+    .timeline-link__btn--clear:after {
+      position: absolute;
+      display: inline-block;
+      left: 125px;
+      top: 46px;
+      content: ">";
+      font-family: monospace;
+      font-size: 15px; }
+    .timeline-link__btn--clear:hover {
+      border: 1px solid white;
+      color: #fafafa;
+      text-decoration: underline; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -771,109 +877,6 @@ body {
       position: relative;
       left: calc(50% + 4rem);
       margin-top: 1rem; }
-
-.timeline-popup {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 999;
-  opacity: 0;
-  visibility: hidden;
-  transition: all .4s; }
-  .timeline-popup:target {
-    opacity: 1;
-    visibility: visible; }
-  .timeline-popup:target .timeline-popup__content {
-    transform: translate(-50%, -50%) scale(1); }
-  .timeline-popup__close:link, .timeline-popup__close:visited {
-    display: inline-block;
-    color: #3e3e3e;
-    position: absolute;
-    top: 2.5rem;
-    right: 2.5rem;
-    line-height: 1;
-    font-size: 3rem;
-    text-decoration: none;
-    transition: all .3s;
-    font-weight: 300; }
-  .timeline-popup__close:hover {
-    font-weight: 500; }
-  .timeline-popup__content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 75%;
-    background-color: #fff;
-    height: 40rem;
-    border-radius: 3px;
-    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    display: table;
-    transform: translate(-50%, -50%) scale(0.3);
-    transition: all .3s .4s; }
-  .timeline-popup__left {
-    width: 33.33333%;
-    display: table-cell; }
-  .timeline-popup__right {
-    width: 66.66666%;
-    display: table-cell;
-    vertical-align: middle;
-    padding: 3rem 5rem; }
-  .timeline-popup__img {
-    display: block;
-    width: 100%; }
-
-.timeline-link {
-  position: relative;
-  width: 200px;
-  height: 120px;
-  background-color: red;
-  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
-  border-radius: 3px;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/polish-soviet.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  transition: all 1s;
-  z-index: 100;
-  margin: 1rem 0; }
-  .timeline-link:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/polish-soviet.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; }
-  .timeline-link__right {
-    margin-left: calc(50% + 4rem); }
-  .timeline-link__btn--clear {
-    display: inline-block;
-    text-decoration: none;
-    font-family: sans-serif;
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 10px 20px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    color: rgba(255, 255, 255, 0.6);
-    border-radius: 3px;
-    font-size: 16px;
-    margin-top: 35px;
-    transition: all .5s;
-    text-transform: uppercase; }
-    .timeline-link__btn--clear:after {
-      position: absolute;
-      display: inline-block;
-      left: 125px;
-      top: 46px;
-      content: ">";
-      font-family: monospace;
-      font-size: 15px; }
-    .timeline-link__btn--clear:hover {
-      border: 1px solid white;
-      color: #fafafa;
-      text-decoration: underline; }
 
 .timeline-item__par,
 .timeline-link {
