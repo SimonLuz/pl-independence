@@ -1,0 +1,43 @@
+.cards-container {
+    @include clearfix;
+    width: 100%;
+    background-color: #b2bec3;
+}
+
+.menu-card {
+    
+    background-color: #fff;
+    padding: 3rem 4rem;
+    height: 40rem;
+    border-radius: 3px;
+    
+    &__icon-container {
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: 10rem;
+    }
+    
+    &__icon {
+        display:inline-block;
+        width: 40%;
+    }
+    
+    &__par {
+        
+    }
+}
+
+
+
+
+
+.about-icon {
+    text-align: center;
+    height: 10rem;
+    
+    &__img {
+        height: 100%;
+        
+    }
+}
