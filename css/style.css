@@ -182,19 +182,116 @@ body {
       margin-left: -17px;
       margin-bottom: -34px; }
 
+/*
+// TIMELINE AXIS - PHOTOS & LINK FOR POPUP WINDOW STORIES
+.timeline-link {
+    position: relative;
+    width: 200px;
+    height: 120px;
+   // border: 1px solid black;
+    background-color: red;
+    box-shadow: 0rem .5rem 1rem rgba(0,0,0, .3);
+    border-radius: 3px;
+    background:
+        linear-gradient(
+            rgba(0,0,0, 0.3),
+            rgba(0,0,0, 0.3)
+        ),
+        url(../img/polish-soviet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    transition: all 1s;
+    z-index: 100;
+    margin: 1rem 0;
+    
+    &:hover {
+         background:
+        linear-gradient(
+            rgba(0,0,0, 0.6),
+            rgba(0,0,0, 0.6)
+        ),
+        url(../img/polish-soviet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+    
+    &__right {
+        margin-left: calc(50% + 4rem);
+        
+    }
+    
+    &__left {
+        display: inline-block;
+        right: calc(-50% + 25rem);
+    }
+*/
+.menu-cards__button-container {
+  display: inline-block;
+  background-color: #9c0a0b;
+  border-radius: 3px; }
+
+.btn {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  padding: .7rem 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  font-size: 1.6rem;
+  transition: all .5s; }
+  .btn__clear {
+    /*
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 20px;
+        border: 1px solid rgba(255,255,255, .6);
+        color: rgba(255,255,255, .6);
+        border-radius: 3px;
+        font-size: 1.6rem;
+        //margin-top: 35px;
+        transition: all .5s;
+        text-transform: uppercase;
+        */ }
+    .btn__clear:after {
+      position: absolute;
+      display: inline-block;
+      left: 125px;
+      top: 46px;
+      content: ">";
+      font-family: monospace;
+      font-size: 15px; }
+    .btn__clear:hover {
+      border: 1px solid white;
+      color: #fafafa;
+      text-decoration: underline; }
+  .btn__menu-card {
+    background-color: #9c0a0b;
+    margin: .5rem; }
+
+.intro-cards {
+  background-color: #fbfbfb; }
+
 .cards-container {
   width: 100%;
-  background-color: #b2bec3; }
+  padding: 5rem 0 10rem 0; }
   .cards-container::after {
     content: "";
     display: block;
     clear: both; }
 
 .menu-card {
-  background-color: #fff;
+  position: relative;
+  background-color: #fbfbfb;
   padding: 3rem 4rem;
-  height: 40rem;
-  border-radius: 3px; }
+  border-radius: 3px;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+  transition: all .2s; }
+  .menu-card:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); }
   .menu-card__icon-container {
     display: block;
     width: 100%;
@@ -401,7 +498,44 @@ body {
   text-align: center;
   transition: all 1s;
   z-index: 100;
-  margin: 1rem 0; }
+  margin: 1rem 0;
+  /*
+// CLEAR PHOTO BUTTON STYLES
+    &__btn {
+        
+        &--clear {
+            display: inline-block;
+            text-decoration: none;
+            font-family: sans-serif;
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 10px 20px;
+            border: 1px solid rgba(255,255,255, .6);
+            color: rgba(255,255,255, .6);
+            border-radius: 3px;
+            font-size: 16px;
+            margin-top: 35px;
+            transition: all .5s;
+            text-transform: uppercase;
+            
+            &:after {
+                position: absolute;
+                display: inline-block;
+                left: 125px;
+                top: 46px;
+                content: ">";
+                font-family: monospace;
+                font-size: 15px;
+            }
+
+            &:hover {
+                border: 1px solid rgba(255,255,255, 1);
+                color: rgba(250,250,250, 1);
+                text-decoration: underline;
+            }
+        }
+    }
+    */ }
   .timeline-link:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/polish-soviet.jpg);
     background-repeat: no-repeat;
@@ -411,32 +545,6 @@ body {
   .timeline-link__left {
     display: inline-block;
     right: calc(-50% + 25rem); }
-  .timeline-link__btn--clear {
-    display: inline-block;
-    text-decoration: none;
-    font-family: sans-serif;
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 10px 20px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    color: rgba(255, 255, 255, 0.6);
-    border-radius: 3px;
-    font-size: 16px;
-    margin-top: 35px;
-    transition: all .5s;
-    text-transform: uppercase; }
-    .timeline-link__btn--clear:after {
-      position: absolute;
-      display: inline-block;
-      left: 125px;
-      top: 46px;
-      content: ">";
-      font-family: monospace;
-      font-size: 15px; }
-    .timeline-link__btn--clear:hover {
-      border: 1px solid white;
-      color: #fafafa;
-      text-decoration: underline; }
 
 .row {
   max-width: 114rem;
