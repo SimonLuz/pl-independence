@@ -821,14 +821,13 @@ body {
     display: inline-block;
     font-weight: 500;
     opacity: 0;
-    transform: scale(1);
-    transition: all .4s; }
+    transition: all .8s; }
     .timeline-item__head span {
       font-weight: 300;
       font-size: 1.5rem; }
     .timeline-item__head:hover {
       cursor: default;
-      transform: scale(1.3);
+      font-weight: 700;
       color: #9c0a0b; }
     .timeline-item__head:hover + .timeline-item__date {
       color: rgba(156, 10, 11, 0.8);
@@ -886,25 +885,33 @@ body {
   animation-fill-mode: forwards; }
 
 .timeline-item__tag {
-  display: inline-block;
   position: absolute;
-  top: 50%;
-  transform: rotate(270deg); }
+  display: block;
+  color: rgba(200, 200, 200, 0.6);
+  font-size: 7rem;
+  font-weight: 500;
+  letter-spacing: 6px;
+  transform: rotate(270deg);
+  transform-origin: right;
+  line-height: 1; }
 
 .timeline-item__prewar {
   width: 100%;
   background-color: #fafafa;
-  padding: 4px 0; }
+  padding: 4px 0;
+  text-align: left; }
 
 .timeline-item__war {
   width: 100%;
   background-color: #f7f7f7;
-  padding: 4px 0; }
+  padding: 4px 0;
+  text-align: left; }
 
 .timeline-item__postwar {
   width: 100%;
   background-color: #f2f2f2;
-  padding: 4px 0; }
+  padding: 4px 0;
+  text-align: left; }
 
 /*
         &--animated {
@@ -1141,6 +1148,20 @@ body {
     left: 5rem;
     display: block;
     width: 100%; }
+
+.dialog-container {
+  margin: 0 auto;
+  max-width: 80rem;
+  margin-top: 10rem; }
+
+.silhuettes {
+  text-align: center; }
+
+.person {
+  display: inline-block; }
+  .person img {
+    display: block;
+    height: 20vh; }
 
 .section-about {
   background-color: #fff;

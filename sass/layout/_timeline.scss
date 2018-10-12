@@ -146,8 +146,9 @@
         display: inline-block;
         font-weight: 500;
         opacity: 0;
-        transform: scale(1);
-        transition: all .4s;
+        //transform: scale(1);
+        //transform-origin: bottom;
+        transition: all .8s;
         
         span {
             font-weight: 300;
@@ -156,7 +157,9 @@
         
         &:hover {
             cursor: default;
-            transform: scale(1.3);
+            //transform: scale(1.3);
+            //font-size: 2rem;
+            font-weight: 700;
             color: $color-flag-red-dark;
         }
         
@@ -233,7 +236,6 @@
     }
 }
 
-
 // TRANSITION OF THE DESCRIPTION PARAGRAPH & PHOTO-LINK APPEARANCE ON TIMELINE
 .timeline-item__par,
 .timeline-link {
@@ -243,34 +245,46 @@
     animation-fill-mode: forwards;
 }
 
-   
-
-
 // 3 SEPARATE COLOR SECTIONS OF THE TIMELINE AXIS
-
  .timeline-item__tag {
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-        
-        transform: rotate(270deg);
-    }
+     //margin-top: 35rem;
+     //margin-left: 5rem;
+     //float: left;
+     position: absolute;
+     display: block;
+     color: rgba(200,200,200, .6);
+     font-size: 7rem;
+     font-weight: 500;
+     letter-spacing: 6px;
+     transform: rotate(270deg);
+     transform-origin: right;
+     line-height: 1;
+}
+
 .timeline-item__prewar {
+    //position: relative;
     width: 100%;
     background-color: #fafafa;
     padding: 4px 0;
+    text-align:left;
+    
     }
 
 .timeline-item__war {
+    //position: relative;
     width: 100%;
     background-color: #f7f7f7;
     padding: 4px 0;
+    text-align:left;
     }
         
 .timeline-item__postwar {
+    //position: relative;
     width: 100%;
     background-color: #f2f2f2;
     padding: 4px 0;
+    text-align:left;
+
     }
 
 
