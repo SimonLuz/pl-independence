@@ -36,8 +36,18 @@
     }
     
     &__par {
-        
+        margin-bottom: 2rem;
     }
+    
+    &__button-container {
+    
+    }
+
+    &__button-background {
+    display: inline-block;
+    background-color: $color-flag-red-dark;
+    border-radius: 3px;
+}
 }
 
 

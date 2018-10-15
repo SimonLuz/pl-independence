@@ -43,4 +43,10 @@
         background-color: #e8e8e8; //rgba(210,210,210, 1);
         @include speechBubbleRight;
     }
+    
+    &__closing {
+        color:$color-flag-red-dark;
+        font-size: 2rem;
+        font-weight: 700;
+    }
 }

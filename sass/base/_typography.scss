@@ -4,6 +4,7 @@
     text-transform: uppercase;
     display: block;
     font-weight: 300;
+    color: $color-flag-red-dark;
         
     
     &:after {
@@ -18,8 +19,12 @@
 
 .long-copy {
     display: inline-block;
-    max-width: 70rem;
-    text-align: justify;
+    //max-width: 70rem;
+    text-align: left;
+    
+    &__large-font {
+        font-size: 1.8rem;
+    }
 }
 
 .heading-tertiary {
@@ -30,4 +35,14 @@
 
 .span-bold {
     font-weight: 500;
+}
+
+.copy-container {
+    
+    &__80rem {
+        max-width: 80rem;
+        margin: 0 auto;
+        text-align: justify;
+    }
+    
 }

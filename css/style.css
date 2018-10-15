@@ -29,7 +29,8 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   display: block;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #9c0a0b; }
   .heading-secondary:after {
     display: block;
     content: "";
@@ -40,8 +41,9 @@ body {
 
 .long-copy {
   display: inline-block;
-  max-width: 70rem;
-  text-align: justify; }
+  text-align: left; }
+  .long-copy__large-font {
+    font-size: 1.8rem; }
 
 .heading-tertiary {
   text-transform: uppercase;
@@ -50,6 +52,11 @@ body {
 
 .span-bold {
   font-weight: 500; }
+
+.copy-container__80rem {
+  max-width: 80rem;
+  margin: 0 auto;
+  text-align: justify; }
 
 .u-center-text {
   text-align: center !important; }
@@ -181,6 +188,10 @@ body {
       border-right: 0;
       margin-left: -17px;
       margin-bottom: -34px; }
+  .intro-item__closing {
+    color: #9c0a0b;
+    font-size: 2rem;
+    font-weight: 700; }
 
 /*
 // TIMELINE AXIS - PHOTOS & LINK FOR POPUP WINDOW STORIES
@@ -226,11 +237,6 @@ body {
         right: calc(-50% + 25rem);
     }
 */
-.menu-cards__button-container {
-  display: inline-block;
-  background-color: #9c0a0b;
-  border-radius: 3px; }
-
 .btn {
   position: relative;
   text-decoration: none;
@@ -240,7 +246,13 @@ body {
   color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   font-size: 1.6rem;
-  transition: all .5s; }
+  transition: all .3s; }
+  .btn:hover, .btn:active {
+    border: 1px solid white;
+    color: #fafafa;
+    text-decoration: underline; }
+  .btn:hover .btn__clear::after {
+    color: black; }
   .btn__clear {
     /*
         position: relative;
@@ -255,18 +267,17 @@ body {
         transition: all .5s;
         text-transform: uppercase;
         */ }
-    .btn__clear:after {
+    .btn__clear::after {
       position: absolute;
       display: inline-block;
-      left: 125px;
-      top: 46px;
+      left: 6.3rem;
+      top: 1.1rem;
       content: ">";
       font-family: monospace;
-      font-size: 15px; }
-    .btn__clear:hover {
-      border: 1px solid white;
-      color: #fafafa;
-      text-decoration: underline; }
+      font-size: 1.6rem;
+      color: rgba(255, 255, 255, 0.6); }
+  .btn:hover .btn__clear::after {
+    color: black; }
   .btn__menu-card {
     background-color: #9c0a0b;
     margin: .5rem; }
@@ -300,6 +311,12 @@ body {
   .menu-card__icon {
     display: inline-block;
     width: 40%; }
+  .menu-card__par {
+    margin-bottom: 2rem; }
+  .menu-card__button-background {
+    display: inline-block;
+    background-color: #9c0a0b;
+    border-radius: 3px; }
 
 .about-icon {
   text-align: center;
@@ -831,6 +848,29 @@ body {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     z-index: 20; }
 
+.timeline-map {
+  position: relative;
+  overflow: hidden; }
+  .timeline-map:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: .2;
+    background-image: url(../img/central_europe-small.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.long-copy__timeline-map {
+  position: relative;
+  margin: 6rem 0;
+  opacity: 1;
+  z-index: 20; }
+
 .timeline-date__container {
   text-align: center; }
 
@@ -991,6 +1031,18 @@ body {
   animation: timelineDescription 2s;
   animation-delay: 1.5s;
   animation-fill-mode: forwards; }
+
+.timeline-link {
+  position: relative; }
+  .timeline-link__img {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)); }
+  .timeline-link__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6); }
 
 .timeline-item__tag {
   position: absolute;

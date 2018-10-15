@@ -45,11 +45,8 @@
 
 
 // CLEAR PHOTO BUTTON STYLES
-.menu-cards__button-container {
-    display: inline-block;
-    background-color: $color-flag-red-dark;
-    border-radius: 3px;
-}
+
+
 
 .btn {
     position: relative;
@@ -61,8 +58,20 @@
     border-radius: 3px;
     font-size: 1.6rem;
     //margin-top: 35px;
-    transition: all .5s;
+    transition: all .3s;
     //text-transform: uppercase;
+    
+    &:hover,
+    &:active {
+            border: 1px solid rgba(255,255,255, 1);
+            color: rgba(250,250,250, 1);
+            text-decoration: underline;
+        }
+    
+    &:hover .btn__clear::after {
+        color: black; //rgba(250,250,250, 1);
+    }
+    
    
     &__clear {
         /*
@@ -79,22 +88,21 @@
         text-transform: uppercase;
         */
 
-        &:after {
+        &::after {
             position: absolute;
             display: inline-block;
-            left: 125px;
-            top: 46px;
+            left: 6.3rem;
+            top: 1.1rem;
             content: ">";
             font-family: monospace;
-            font-size: 15px;
-        }
-
-        &:hover {
-            border: 1px solid rgba(255,255,255, 1);
-            color: rgba(250,250,250, 1);
-            text-decoration: underline;
+            font-size: 1.6rem;
+            color: rgba(255,255,255, .6);
         }
     }
+    
+    &:hover .btn__clear::after {
+        color: black; //rgba(250,250,250, 1);
+        }  
     
     &__menu-card {
         background-color: $color-flag-red-dark;
