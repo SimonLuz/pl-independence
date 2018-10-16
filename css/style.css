@@ -53,10 +53,13 @@ body {
 .span-bold {
   font-weight: 500; }
 
-.copy-container__80rem {
-  max-width: 80rem;
+.copy-container {
   margin: 0 auto;
-  text-align: justify; }
+  text-align: left; }
+  .copy-container__80rem {
+    max-width: 80rem; }
+  .copy-container__100rem {
+    max-width: 100rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -278,8 +281,11 @@ body {
       color: rgba(255, 255, 255, 0.6); }
   .btn:hover .btn__clear::after {
     color: black; }
-  .btn__menu-card {
+  .btn__red {
     background-color: #9c0a0b;
+    margin: .5rem; }
+  .btn__orange {
+    background-color: #e68c00;
     margin: .5rem; }
 
 .intro-cards {
@@ -840,7 +846,7 @@ body {
     left: 53%;
     font-family: Courier;
     text-transform: uppercase;
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 700;
     letter-spacing: 4px;
     line-height: 1.5;
@@ -855,21 +861,32 @@ body {
     animation-delay: 7s; }
   .header__secondary {
     display: block;
-    width: 700px;
-    background-color: rgba(225, 225, 225, 0.5);
     position: absolute;
-    padding: 20px;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 25px;
+    bottom: -4%;
+    left: 45%;
+    transform: translateX(-50%);
+    font-family: Courier;
+    font-size: 2rem;
     font-weight: 300;
     color: #9c0a0b;
     line-height: 1.5;
-    text-align: left;
     border-radius: 3px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     z-index: 20; }
+    .header__secondary p {
+      display: block;
+      width: 100%; }
+    .header__secondary span {
+      display: inline-block;
+      background-color: rgba(225, 225, 225, 0.8);
+      margin-bottom: .3rem; }
+    .header__secondary--line2 {
+      margin-left: 5%; }
+    .header__secondary--line3 {
+      margin-left: 3%; }
+    .header__secondary--bottom-btn {
+      margin-top: 4rem; }
+      .header__secondary--bottom-btn span {
+        font-size: 1.4rem; }
 
 .timeline-map {
   position: relative;

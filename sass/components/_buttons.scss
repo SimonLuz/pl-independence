@@ -104,8 +104,12 @@
         color: black; //rgba(250,250,250, 1);
         }  
     
-    &__menu-card {
+    &__red {
         background-color: $color-flag-red-dark;
         margin:.5rem;
         }
+    &__orange {
+        background-color: #e68c00;
+        margin:.5rem;
+    }
 }

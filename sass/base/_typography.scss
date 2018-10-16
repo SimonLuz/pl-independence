@@ -39,10 +39,16 @@
 
 .copy-container {
     
+    margin: 0 auto;
+    text-align: left;
+    
     &__80rem {
         max-width: 80rem;
-        margin: 0 auto;
-        text-align: justify;
+        
+    }
+    
+    &__100rem {
+        max-width: 100rem;
     }
     
 }
