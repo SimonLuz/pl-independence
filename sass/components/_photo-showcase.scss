@@ -49,6 +49,11 @@
         filter: sepia();
         transition: all .5s;
         
+        
+        &--march {
+            filter: saturate(50%);
+        }
+        
     }
    
     &__caption {
