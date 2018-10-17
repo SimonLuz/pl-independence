@@ -37,6 +37,18 @@
     }
 }
 
+@keyframes headerSubtitle {
+    0% {
+        opacity: 0;
+        
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+
 //======================================
 // HEADER-DRIP ANIMATIONS 
 //======================================
