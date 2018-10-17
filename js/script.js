@@ -20,9 +20,23 @@ $(document).ready(function() {
     }, {
         offset:'30%'
     })
+
+// SCROLL TO SECTION 
+    $(".js--scroll-to-section-intro").click(function() {
+        $("html, body").animate({scrollTop: $(".js--section-intro").offset().top}, 600);
+    });
     
+    $(".js--scroll-to-section-about").click(function() {
+        $("html, body").animate({scrollTop: $(".js--section-about").offset().top}, 600);
+    });
     
+    $(".js--scroll-to-section-timeline").click(function() {
+        $("html, body").animate({scrollTop: $(".js--section-timeline").offset().top}, 1000);
+    });
     
+    $(".js--scroll-to-section-march").click(function() {
+        $("html, body").animate({scrollTop: $(".js--section-march").offset().top}, 1200);
+    });
     
 /*
 // svastika & commy ICON ANIMATION STYLES --- STILL ANIMATES AAAAAAALLLLLLLL ICONS, NOT JUST THE PARENT

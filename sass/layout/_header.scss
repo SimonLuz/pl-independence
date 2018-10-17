@@ -111,13 +111,14 @@
     }
     
     &__secondary {
+        width: 100rem;
         display: block;
         position: absolute;
         //padding: 20px;
         //margin-left:10%;
-        bottom: -4%;
+        bottom: 0;
         left: 45%;
-        transform: translateX(-50%);
+        transform: translateX(-30%);
         font-family: Courier;
         font-size: 2rem;
         font-weight: 300;
@@ -137,6 +138,7 @@
         
         span {
            display: inline-block;
+            //width: 100%;
             background-color: rgba(225, 225, 225, 0.8);
             margin-bottom: .3rem;
 

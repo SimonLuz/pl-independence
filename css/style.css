@@ -860,11 +860,12 @@ body {
     animation-fill-mode: forwards;
     animation-delay: 7s; }
   .header__secondary {
+    width: 100rem;
     display: block;
     position: absolute;
-    bottom: -4%;
+    bottom: 0;
     left: 45%;
-    transform: translateX(-50%);
+    transform: translateX(-30%);
     font-family: Courier;
     font-size: 2rem;
     font-weight: 300;
