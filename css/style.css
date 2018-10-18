@@ -40,8 +40,10 @@ body {
     margin: 3rem auto; }
 
 .long-copy {
-  display: inline-block;
   text-align: left; }
+  .long-copy__text {
+    column-count: 2;
+    column-gap: 2rem; }
   .long-copy__large-font {
     font-size: 1.8rem; }
 
@@ -197,10 +199,40 @@ body {
       border-right: 0;
       margin-left: -17px;
       margin-bottom: -34px; }
+    .intro-item__answer--two {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    .intro-item__answer--three {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
   .intro-item__closing {
     color: #9c0a0b;
     font-size: 2rem;
-    font-weight: 700; }
+    font-weight: 500; }
+
+.closing-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-right: -5rem;
+  margin-top: 3rem; }
+  .closing-container__one {
+    position: relative;
+    top: -2rem; }
+  .closing-container__two {
+    position: absolute;
+    bottom: 1rem;
+    left: -30rem; }
+  .closing-container__three {
+    position: absolute;
+    bottom: 0;
+    right: -17rem; }
+  .closing-container__bottom-btn {
+    position: relative;
+    left: 15rem;
+    top: 5rem; }
 
 /*
 // TIMELINE AXIS - PHOTOS & LINK FOR POPUP WINDOW STORIES
@@ -293,6 +325,10 @@ body {
   .btn__orange {
     background-color: #e68c00;
     margin: .5rem; }
+  .btn__arrow {
+    background-color: #e68c00; }
+    .btn__arrow:hover {
+      text-decoration: none; }
 
 .intro-cards {
   background-color: #fbfbfb; }
@@ -1393,13 +1429,14 @@ body {
   margin-top: 10rem; }
 
 .silhuettes {
-  text-align: center; }
+  text-align: center;
+  background-color: gray; }
 
 .person {
   display: inline-block; }
   .person img {
     display: block;
-    height: 20vh; }
+    height: 40vh; }
 
 .video-container {
   text-align: center; }

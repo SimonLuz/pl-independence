@@ -42,11 +42,59 @@
         color: $color-text-gray-dark;
         background-color: #e8e8e8; //rgba(210,210,210, 1);
         @include speechBubbleRight;
+        
+        &--one {
+            
+        }
+        
+        &--two {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        
+        &--three {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        
     }
     
     &__closing {
         color:$color-flag-red-dark;
         font-size: 2rem;
-        font-weight: 700;
+        font-weight: 500;
+    }
+}
+
+.closing-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-right: -5rem;
+    margin-top: 3rem;
+    
+    &__one {
+        position: relative;
+        top: -2rem;
+    }
+    
+    &__two {
+        position: absolute;
+        bottom: 1rem;
+        left: -30rem;
+    }
+    
+    &__three {
+        position: absolute;
+        bottom: 0;
+        right: -17rem;
+    }
+    
+    &__bottom-btn {
+        position: relative;
+        left: 15rem;
+        top: 5rem;
     }
 }

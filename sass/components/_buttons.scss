@@ -112,4 +112,13 @@
         background-color: #e68c00;
         margin:.5rem;
     }
+    
+    &__arrow {
+        background-color: #e68c00;
+        
+        
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }

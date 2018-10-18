@@ -18,9 +18,14 @@
 }
 
 .long-copy {
-    display: inline-block;
+    //display: inline-block;
     //max-width: 70rem;
     text-align: left;
+    
+    &__text {
+        column-count: 2;
+        column-gap: 2rem;
+    }
     
     &__large-font {
         font-size: 1.8rem;

@@ -38,6 +38,10 @@ $(document).ready(function() {
         $("html, body").animate({scrollTop: $(".js--section-march").offset().top}, 1200);
     });
     
+    $(".js--scroll-to-section-intro-cards").click(function() {
+        $("html, body").animate({scrollTop: $(".js--section-intro-cards").offset().top}, 600);
+    })
+    
 /*
 // svastika & commy ICON ANIMATION STYLES --- STILL ANIMATES AAAAAAALLLLLLLL ICONS, NOT JUST THE PARENT
     $('.timeline-item__date').hover(function() {
