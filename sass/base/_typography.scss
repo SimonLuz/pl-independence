@@ -22,7 +22,7 @@
     //max-width: 70rem;
     text-align: left;
     
-    &__text {
+    &__column{
         column-count: 2;
         column-gap: 2rem;
     }
@@ -49,11 +49,13 @@
     
     &__80rem {
         max-width: 80rem;
+        margin: 0 auto;
         
     }
     
     &__100rem {
         max-width: 100rem;
+        margin: 0 auto;
     }
     
 }
