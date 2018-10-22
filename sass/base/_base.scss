@@ -9,7 +9,23 @@
 
 // Definition of 1rem
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; // 1rem = 10px;
+    
+    @include respond(tabLand) { //1rem = 9px;
+        font-size: 56.25%;
+    }
+    
+    @include respond(tabPort) { // 1rem = 8px
+        font-size: 50%;
+    }
+    
+    @include respond(phone) { //1rem = 8px
+        font-size: 40%;
+    }
+    
+    @include respond(bigDesktop) {
+        font-size: 75%; // 1rem = 12px;
+    }
 }
 
 body {

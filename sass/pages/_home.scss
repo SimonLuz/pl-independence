@@ -1,14 +1,39 @@
+.header {
+    height: 100vh;
+}
+
+.section-intro {
+    @include marginTopBottomLarge;
+
+    background-color: $color-timeline-background-light;
+    padding: 10rem 0;
+}
+
+.intro-cards {
+    @include marginTopBottomLarge;
+    
+    background-color: #fbfbfb;
+    padding: 10rem 0;
+}
+
+
 .section-about {
+    @include marginTopBottomLarge;
+    
     background-color: #fff;
     padding: 3rem 0;
 }
 
 .section-photo-showcase {
+    @include marginTopBottomLarge;
+    
     width: 100%;
     padding: 3rem 0; 
 }
 
 
 .section-timeline {
+    @include marginTopBottomLarge;
+    
     max-width: 100vw;
 }

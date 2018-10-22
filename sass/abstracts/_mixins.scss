@@ -13,6 +13,11 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin marginTopBottomLarge {
+    margin-bottom: 8rem;
+    margin-top: 8rem;
+}
+
 
 //SPEECH BUBBLE STYLES
 @mixin speechBubbleLeft {
@@ -54,3 +59,59 @@
         margin-bottom: -34px;
     }
 }
+
+//============================================
+//MEDIA QUERY MANAGER 
+//============================================
+/*
+0 - 600px: PHONE
+600 - 900px: TABLET PORTRAIT
+900 - 1200px: TABLET LANDSCAPE
+[1200 - 1800px: NORMAL STYLES]
+1800px + : BIG DESKTOP
+
+
+ Breakpoint Argument OPTIONS
+- phone
+- tabPort
+- tabLand
+- bigDesktop
+
+
+possible, but not the best way to write a @media Query mixin:
+@mixin respondPhone {
+    @media (max-width: 600px) { @content };
+    }
+
+@content = @ directive
+
+1em = 16px - DEFENITION OF REM IN HTML STYLES DO NOT APPLY TO @MEDIA QUERRIES !!!!!!!!!!!!!!!!!!; 
+em works better than rem - better cross-browser compatibility
+1em = 16px
+
+ORDER: Base + Typography > general layou + grid > page layout > components
+
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) { @content };
+    }
+    
+    @if $breakpoint == tabPort {
+        @media (max-width: 56.25em) { @content };
+    }
+    
+    @if $breakpoint == tabLand {
+        @media (max-width: 75em) { @content };
+    }
+    
+    @if $breakpoint == bigDesktop {
+        @media (min-width: 112.5em) { @content };
+    }
+}
+    
+    
+
+
+

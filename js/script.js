@@ -42,6 +42,11 @@ $(document).ready(function() {
         $("html, body").animate({scrollTop: $(".js--section-intro-cards").offset().top}, 600);
     })
     
+// SHOW/HIDE THE MAP IN TIMELINE SECTION
+    $(".js--btn-map").click(function() {
+        $(".timeline-map__container").toggleClass("timeline-map__display");
+    });
+    
 /*
 // svastika & commy ICON ANIMATION STYLES --- STILL ANIMATES AAAAAAALLLLLLLL ICONS, NOT JUST THE PARENT
     $('.timeline-item__date').hover(function() {
