@@ -1110,19 +1110,34 @@ body {
   color: #555; }
 
 .timeline-map__container {
+  position: relative;
   display: block;
-  visibility: hidden;
-  width: 100%;
+  width: 60rem;
   height: 0;
-  transition: all .4s; }
+  margin: 3rem auto;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: height .8s, opacity 1.9s; }
 
 .timeline-map__map {
   display: block;
-  margin: 0 auto; }
+  width: 100%; }
+
+.timeline-map__caption {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  transform: translateY(-100%);
+  padding: 1rem 1.5rem;
+  line-height: 1.8rem;
+  font-size: 1.6rem; }
 
 .timeline-map__display {
-  visibility: visible;
-  height: 100%; }
+  opacity: 1;
+  height: 38rem; }
 
 .timeline-date__container {
   text-align: center; }
