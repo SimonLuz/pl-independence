@@ -786,10 +786,34 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+  @media (max-width: 75em) {
+    .row {
+      max-width: 105rem; }
+      .row [class^="col-"] {
+        float: left; }
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 2rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      width: 100% !important; }
+      .row [class^="col-"] {
+        float: none;
+        margin-bottom: 6rem; }
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: auto;
+          margin-bottom: 5rem; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
     width: calc((100% - (6rem * 2)) / 3); }
+    @media (max-width: 75em) {
+      .row .col-1-of-3 {
+        width: calc((100% - (2rem * 2)) / 3); } }
+    @media (max-width: 56.25em) {
+      .row .col-1-of-3 {
+        width: 70%;
+        display: block;
+        margin: 0 auto; } }
   .row .col-2-of-3 {
     width: calc(6rem + 2*((100% - (6rem * 2)) / 3)); }
   .row .col-1-of-4 {

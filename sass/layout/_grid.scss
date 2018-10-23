@@ -2,7 +2,6 @@
 
 .row {
     max-width: $grid-width;
-    //background-color: #fff;
     margin: 0 auto;
     
     &:not(:last-child) {
@@ -18,6 +17,35 @@
             margin-right: $grid-gutter-horizontal;
         }
     }
+    
+    @include respond(tabLand) {
+// max width 100rem - for tabLand 1rem = 9px, so 1rem is not 10px ANYMORE!!!!
+        max-width: 105rem;
+        
+        [class^="col-"] {
+        float: left;
+        
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+    }        
+
+    @include respond(tabPort) {
+        width: 100% !important; 
+        
+        [class^="col-"] {
+        float: none;
+        margin-bottom: 6rem;
+            
+            &:not(:last-child) {
+                margin-right: auto;
+                margin-bottom: 5rem;
+            }
+        }
+    }
+    
+    
     .col-1-of-2 {
         width: calc((100% - #{$grid-gutter-horizontal}) / 2);
 // in calc() functions variables MUST have # and be wrapped in {}
@@ -25,6 +53,17 @@
     }
     .col-1-of-3 {
         width: calc((100% - (#{$grid-gutter-horizontal} * 2)) / 3);
+        
+        @include respond(tabLand) {
+            width: calc((100% - (2rem * 2)) / 3);
+        }
+        
+        @include respond(tabPort) {
+            width: 70%;
+            display: block;
+            margin: 0 auto;
+            
+        }
       
     }
     
