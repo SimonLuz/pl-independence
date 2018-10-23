@@ -355,15 +355,16 @@ body {
   margin-top: 3rem; }
   .closing-container__one {
     position: relative;
-    top: -2rem; }
+    top: 1rem;
+    left: -20rem; }
   .closing-container__two {
     position: absolute;
-    bottom: 1rem;
-    left: -30rem; }
+    bottom: -4rem;
+    left: 13rem; }
   .closing-container__three {
     position: absolute;
-    bottom: 0;
-    right: -17rem; }
+    bottom: 1;
+    right: -6rem; }
   .closing-container__bottom-btn {
     position: relative;
     left: 15rem;
@@ -1002,6 +1003,9 @@ body {
     font-weight: 500;
     line-height: 1;
     color: rgba(70, 70, 70, 0.1); }
+    @media (max-width: 75em) {
+      .header__primary--main {
+        font-size: 8rem; } }
   .header__primary--container {
     display: inline-block;
     position: absolute;
@@ -1064,6 +1068,15 @@ body {
     animation: headerStamp .5s;
     animation-fill-mode: forwards;
     animation-delay: 6s; }
+    @media (max-width: 75em) {
+      .header__stamp {
+        left: 57%;
+        top: 50%; } }
+    @media (max-width: 56.25em) {
+      .header__stamp {
+        left: 50%;
+        top: 50%;
+        font-size: 5.5rem; } }
   .header__secondary {
     width: 100rem;
     display: block;
@@ -1081,6 +1094,9 @@ body {
     animation: headerSubtitle .9s;
     animation-fill-mode: forwards;
     animation-delay: 7s; }
+    @media (max-width: 75em) {
+      .header__secondary {
+        bottom: -2rem; } }
     .header__secondary p {
       display: block;
       width: 100%; }
@@ -1445,7 +1461,14 @@ body {
   overflow: hidden;
   background-image: linear-gradient(to right, #fecfd1, #9c0a0b);
   animation: liquid 6s 1;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  /*     @include respond(tabPort) {
+        background-image: linear-gradient(
+            to bottom right, 
+            #fecfd1, 
+            #9c0a0b);;
+        }
+    */ }
 
 .liquid__container {
   filter: url("#goo");

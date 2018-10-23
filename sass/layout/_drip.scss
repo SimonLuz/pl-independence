@@ -22,6 +22,14 @@
                 #9c0a0b);
   animation: liquid 6s 1;
     animation-fill-mode: forwards;
+    
+/*     @include respond(tabPort) {
+        background-image: linear-gradient(
+            to bottom right, 
+            #fecfd1, 
+            #9c0a0b);;
+        }
+    */
 }
 
 .liquid__container {
