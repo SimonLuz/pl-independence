@@ -68,11 +68,14 @@ body {
 .heading-secondary {
   font-size: 3.5rem;
   line-height: 1.1;
-  letter-spacing: 2px;
+  letter-spacing: .2rem;
   text-transform: uppercase;
   display: block;
   font-weight: 300;
   color: #9c0a0b; }
+  @media (max-width: 75em) {
+    .heading-secondary {
+      letter-spacing: normal; } }
   .heading-secondary:after {
     display: block;
     content: "";
@@ -94,6 +97,9 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 1.5rem; }
+  @media (max-width: 75em) {
+    .heading-tertiary {
+      font-size: 1.65rem; } }
 
 .span-bold {
   font-weight: 500; }

@@ -1,12 +1,15 @@
 .heading-secondary {
     font-size: 3.5rem;
     line-height: 1.1;
-    letter-spacing: 2px;
+    letter-spacing: .2rem;
     text-transform: uppercase;
     display: block;
     font-weight: 300;
     color: $color-flag-red-dark;
         
+    @include respond(tabLand) {
+        letter-spacing: normal;
+    }
     
     &:after {
         display: block;
@@ -38,6 +41,10 @@
     text-transform: uppercase;
     font-weight: 500;
     margin-bottom: 1.5rem;
+    
+    @include respond(tabLand) {
+        font-size: 1.65rem;
+    }
 }
 
 .span-bold {
@@ -52,7 +59,6 @@
     &__80rem {
         max-width: 80rem;
         margin: 0 auto;
-        
     }
     
     &__100rem {
