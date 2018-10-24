@@ -64,6 +64,10 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: #777; }
+  @media (max-width: 56.25em) {
+    body {
+      font-size: 1.8rem;
+      line-height: 1.5; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -89,9 +93,17 @@ body {
   .long-copy__column {
     column-count: 2;
     column-gap: 2rem;
-    column-rule: 1px solid lightgray; }
+    column-rule: 1px solid lightgray;
+    padding: 1rem 2rem; }
+    @media (max-width: 56.25em) {
+      .long-copy__column {
+        padding: 2rem 3rem; } }
   .long-copy__large-font {
     font-size: 1.8rem; }
+    @media (max-width: 56.25em) {
+      .long-copy__large-font {
+        font-size: 2rem;
+        padding: 0 2rem; } }
 
 .heading-tertiary {
   text-transform: uppercase;
@@ -100,6 +112,10 @@ body {
   @media (max-width: 75em) {
     .heading-tertiary {
       font-size: 1.65rem; } }
+  @media (max-width: 56.25em) {
+    .heading-tertiary {
+      font-size: 2.2rem;
+      text-align: center; } }
 
 .span-bold {
   font-weight: 500; }
@@ -280,6 +296,9 @@ body {
 .intro-container {
   max-width: 80rem;
   margin: 0 auto; }
+  @media (max-width: 56.25em) {
+    .intro-container {
+      padding: 0 2rem; } }
 
 .intro-item {
   font-weight: 300;
@@ -488,6 +507,10 @@ body {
   box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
   transition: all .2s;
   margin-top: 2rem; }
+  @media (max-width: 56.25em) {
+    .menu-card {
+      padding: 5rem;
+      background-color: #fefefe; } }
   .menu-card:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); }
@@ -496,11 +519,23 @@ body {
     width: 100%;
     text-align: center;
     height: 10rem; }
+    @media (max-width: 56.25em) {
+      .menu-card__icon-container {
+        height: 10rem;
+        margin-bottom: 3rem; } }
   .menu-card__icon {
     display: inline-block;
     width: 40%; }
+    @media (max-width: 56.25em) {
+      .menu-card__icon {
+        height: 100%;
+        width: auto; } }
   .menu-card__par {
     margin-bottom: 2rem; }
+    @media (max-width: 56.25em) {
+      .menu-card__par {
+        margin: 2rem 3rem 4rem 3rem;
+        font-size: 2rem; } }
   .menu-card__button-background {
     display: inline-block;
     background-color: #9c0a0b;

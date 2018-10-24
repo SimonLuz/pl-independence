@@ -30,10 +30,20 @@
         column-count: 2;
         column-gap: 2rem;
         column-rule: 1px solid lightgray;
+        padding: 1rem 2rem;
+        
+        @include respond(tabPort) {
+            padding: 2rem 3rem;
+        }
     }
     
     &__large-font {
         font-size: 1.8rem;
+        
+        @include respond(tabPort) {
+            font-size: 2rem;
+            padding: 0 2rem;
+        }
     }
 }
 
@@ -44,6 +54,11 @@
     
     @include respond(tabLand) {
         font-size: 1.65rem;
+    }
+    
+    @include respond(tabPort) {
+        font-size: 2.2rem;
+        text-align: center;
     }
 }
 

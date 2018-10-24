@@ -15,6 +15,11 @@
     transition: all .2s;
     margin-top: 2rem;
     
+    @include respond(tabPort) {
+        padding: 5rem;
+        background-color: #fefefe;
+    }
+    
     &:hover {
         transform: translateY(-.3rem);
         box-shadow: 0 1rem 3rem rgba(0,0,0, .2);
@@ -25,15 +30,30 @@
         width: 100%;
         text-align: center;
         height: 10rem;
+        
+        @include respond(tabPort) {
+            height: 10rem;
+            margin-bottom: 3rem;
+        }
     }
     
     &__icon {
         display:inline-block;
         width: 40%;
+        
+        @include respond(tabPort) {
+            height: 100%;
+            width: auto;
+        }
     }
     
     &__par {
         margin-bottom: 2rem;
+        
+        @include respond(tabPort) {
+            margin: 2rem 3rem 4rem 3rem;
+            font-size: 2rem;
+        }
     }
     
     &__button-container {
@@ -41,10 +61,10 @@
     }
 
     &__button-background {
-    display: inline-block;
-    background-color: $color-flag-red-dark;
-    border-radius: 3px;
-}
+        display: inline-block;
+        background-color: $color-flag-red-dark;
+        border-radius: 3px;
+    }
 }
 
 
