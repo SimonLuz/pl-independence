@@ -172,23 +172,7 @@
             animation-fill-mode: forwards;
         }*/ 
     }
-/*
-//ANIMATION fadeInLeft DELAY - START
-    &:nth-of-type(2) &__box--animated {
-        animation-delay: .2s;
-    }
-    
-    &:nth-of-type(3) &__box--animated {
-        animation-delay: .4s;
-    }
-    
-    &:nth-of-type(4) &__box--animated {
-        animation-delay: .6s;
-    }
-    
-    &:nth-of-type(5) &__box--animated {
-        animation-delay: .8s;
-    }*/
+
     
     &__icon {
         display: block;
@@ -428,7 +412,133 @@
 
     }
 
+//=================================
+// Mobile tabPort TIMELINE STYLES - 600-900px
+//=================================
 
+@include respond(tabPort) {
+    
+    .mobile-timeline-item {
+        
+        position: relative;
+        width: 100%;
+        
+        &__head-container {
+            display: inline-block;
+            margin-left: 25%;
+        }
+        
+        &__head-text {
+            border-bottom: 1px solid gray;
+        }
+        
+        &__date-container {
+            display: inline-block;
+            position: relative;
+            right: 63%;
+            
+        }
+        
+        &__date-text {
+            
+        }
+        
+        &__icon-container {
+            display: inline-block;
+            left: 17.8%;
+        }
+        
+        &__icon-img {
+            
+        }
+        
+    }
+    
+    .mobile-timeline-box {
+        
+        &__container {
+            margin-left: 23%;
+            margin-top: .5rem;
+        }
+        
+        &__par {
+            
+        }
+    }
+    
+    
+// STYLES FOR DATES AT THE BOTTOM & TOP OF THE TIMELINE AXIS
+    .timeline-date {
+
+        &__container {
+             text-align: left;
+
+// RAISED BOTTOM DATE BY 8 REM - div "row" has 8rem margin-bottom        
+            &--bottom {
+                position: relative;
+                top: -8rem;
+            }
+        }
+
+        &__top,
+        &__bottom {
+            display: inline-block;
+            //text-align: center;
+            font-family: Georgia;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: -3rem;
+        }
+
+        &__top {
+            border-bottom: 2px solid black;
+        }
+
+        &__bottom {
+            border-top: 2px solid black;
+        }
+    }
+
+
+    // TIMELINE 'AXIS' START
+    .timeline-axis {
+        position: relative;
+        //padding-bottom: 3rem;
+
+        &::before {
+            position: absolute;
+            left: 20%;
+            content: "";
+            width: 2px;
+            background-color: #555;
+            height: 100%;
+        }
+    }
+    // TIMELINE 'AXIS' STYLES END 
+
+
+
+    }
+
+
+/*
+//ANIMATION fadeInLeft DELAY - START
+    &:nth-of-type(2) &__box--animated {
+        animation-delay: .2s;
+    }
+    
+    &:nth-of-type(3) &__box--animated {
+        animation-delay: .4s;
+    }
+    
+    &:nth-of-type(4) &__box--animated {
+        animation-delay: .6s;
+    }
+    
+    &:nth-of-type(5) &__box--animated {
+        animation-delay: .8s;
+    }*/
 
 
         /*

@@ -1254,24 +1254,7 @@ body {
 .timeline-item {
   position: relative;
   margin-top: 6rem;
-  line-height: 1.1;
-  /*
-//ANIMATION fadeInLeft DELAY - START
-    &:nth-of-type(2) &__box--animated {
-        animation-delay: .2s;
-    }
-    
-    &:nth-of-type(3) &__box--animated {
-        animation-delay: .4s;
-    }
-    
-    &:nth-of-type(4) &__box--animated {
-        animation-delay: .6s;
-    }
-    
-    &:nth-of-type(5) &__box--animated {
-        animation-delay: .8s;
-    }*/ }
+  line-height: 1.1; }
   .timeline-item:first-child {
     margin-top: 6rem; }
   .timeline-item__box {
@@ -1446,6 +1429,68 @@ body {
   text-align: left;
   padding-bottom: 6rem; }
 
+@media (max-width: 56.25em) {
+  .mobile-timeline-item {
+    position: relative;
+    width: 100%; }
+    .mobile-timeline-item__head-container {
+      display: inline-block;
+      margin-left: 25%; }
+    .mobile-timeline-item__head-text {
+      border-bottom: 1px solid gray; }
+    .mobile-timeline-item__date-container {
+      display: inline-block;
+      position: relative;
+      right: 63%; }
+    .mobile-timeline-item__icon-container {
+      display: inline-block;
+      left: 17.8%; }
+  .mobile-timeline-box__container {
+    margin-left: 23%;
+    margin-top: .5rem; }
+  .timeline-date__container {
+    text-align: left; }
+    .timeline-date__container--bottom {
+      position: relative;
+      top: -8rem; }
+  .timeline-date__top, .timeline-date__bottom {
+    display: inline-block;
+    font-family: Georgia;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: -3rem; }
+  .timeline-date__top {
+    border-bottom: 2px solid black; }
+  .timeline-date__bottom {
+    border-top: 2px solid black; }
+  .timeline-axis {
+    position: relative; }
+    .timeline-axis::before {
+      position: absolute;
+      left: 20%;
+      content: "";
+      width: 2px;
+      background-color: #555;
+      height: 100%; } }
+
+/*
+//ANIMATION fadeInLeft DELAY - START
+    &:nth-of-type(2) &__box--animated {
+        animation-delay: .2s;
+    }
+    
+    &:nth-of-type(3) &__box--animated {
+        animation-delay: .4s;
+    }
+    
+    &:nth-of-type(4) &__box--animated {
+        animation-delay: .6s;
+    }
+    
+    &:nth-of-type(5) &__box--animated {
+        animation-delay: .8s;
+    }*/
 /*
         &--animated {
             opacity: 0;
