@@ -1479,7 +1479,7 @@ body {
       transform: scale(1); }
     .mobile-timeline-item__par {
       position: relative;
-      display: inline-block;
+      display: block;
       left: 24rem;
       max-width: 33rem;
       font-size: 1.4rem;
@@ -1492,7 +1492,8 @@ body {
       transform-origin: 0 0;
       transition: all .4s; }
   .timeline-date__container {
-    text-align: left; }
+    text-align: left;
+    width: 100%; }
     .timeline-date__container--bottom {
       position: relative;
       top: -8rem; }

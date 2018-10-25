@@ -490,7 +490,7 @@
         
         &__par {
             position: relative;
-            display: inline-block;
+            display: block;
             left: 24rem;
             max-width: 33rem;
             font-size: 1.4rem;
@@ -511,7 +511,8 @@
     .timeline-date {
 
         &__container {
-             text-align: left;
+            text-align: left;
+            width: 100%;
 
 // RAISED BOTTOM DATE BY 8 REM - div "row" has 8rem margin-bottom        
             &--bottom {
