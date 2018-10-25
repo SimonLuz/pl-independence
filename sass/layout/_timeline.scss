@@ -426,10 +426,14 @@
         
         &__head {
             display: inline-block;
-            margin-left: 25%;
+            //margin-left: 25%;
+            margin-left: 24rem;
             font-weight: 500;
             color: rgba($color-text-gray-medium, .7);
             border-bottom: 1px solid rgba($color-text-gray-medium, .7);
+            animation: fadeInRight;
+            animation-duration: .8s;
+            animation-fill-mode: forwards;
             
             &:hover {
             //font-weight: 700;
@@ -454,8 +458,9 @@
         
         &__date {
             display: inline-block;
-            position: relative;
-            right: 65%;
+            position: absolute;
+            left: 6rem;
+            top: -1rem;
             //display: block;
             //position: absolute;
             font-family: Georgia;
@@ -469,10 +474,10 @@
         }
         
         &__icon-container {
-            position: relative;
+            position: absolute;
             display: inline-block;
-            left: -62.5%;
-            top: 1.2rem;
+            left: 16rem;
+            top: -.6rem;
             background-color: #fff;
             padding: .6rem;
             //transform: rotate(45deg);
@@ -486,7 +491,7 @@
         &__par {
             position: relative;
             display: inline-block;
-            left: 25%;
+            left: 24rem;
             max-width: 33rem;
             font-size: 1.4rem;
             line-height: 1.1;
@@ -525,7 +530,7 @@
             font-weight: 700;
             line-height: 1;
             margin-bottom: -3rem;
-            left: 15.5%;
+            left: 13.5rem;
         }
 
         &__top {
@@ -546,7 +551,7 @@
 
         &::before {
             position: absolute;
-            left: 20%;
+            left: 18rem;
             content: "";
             width: 2px;
             background-color: #555;

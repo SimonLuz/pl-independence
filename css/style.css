@@ -1436,10 +1436,13 @@ body {
     margin-top: 2rem; }
     .mobile-timeline-item__head {
       display: inline-block;
-      margin-left: 25%;
+      margin-left: 24rem;
       font-weight: 500;
       color: rgba(119, 119, 119, 0.7);
-      border-bottom: 1px solid rgba(119, 119, 119, 0.7); }
+      border-bottom: 1px solid rgba(119, 119, 119, 0.7);
+      animation: fadeInRight;
+      animation-duration: .8s;
+      animation-fill-mode: forwards; }
       .mobile-timeline-item__head:hover {
         color: #9c0a0b; }
       .mobile-timeline-item__head:hover ~ .mobile-timeline-item__date {
@@ -1454,8 +1457,9 @@ body {
         z-index: 20; }
     .mobile-timeline-item__date {
       display: inline-block;
-      position: relative;
-      right: 65%;
+      position: absolute;
+      left: 6rem;
+      top: -1rem;
       font-family: Georgia;
       font-size: 3rem;
       font-weight: 700;
@@ -1464,10 +1468,10 @@ body {
       transition: all .4s;
       transform-origin: right; }
     .mobile-timeline-item__icon-container {
-      position: relative;
+      position: absolute;
       display: inline-block;
-      left: -62.5%;
-      top: 1.2rem;
+      left: 16rem;
+      top: -.6rem;
       background-color: #fff;
       padding: .6rem;
       transition: all .4s; }
@@ -1476,7 +1480,7 @@ body {
     .mobile-timeline-item__par {
       position: relative;
       display: inline-block;
-      left: 25%;
+      left: 24rem;
       max-width: 33rem;
       font-size: 1.4rem;
       line-height: 1.1;
@@ -1500,7 +1504,7 @@ body {
     font-weight: 700;
     line-height: 1;
     margin-bottom: -3rem;
-    left: 15.5%; }
+    left: 13.5rem; }
   .timeline-date__top {
     border-bottom: 2px solid black;
     margin-bottom: .5rem; }
@@ -1510,7 +1514,7 @@ body {
     position: relative; }
     .timeline-axis::before {
       position: absolute;
-      left: 20%;
+      left: 18rem;
       content: "";
       width: 2px;
       background-color: #555;
