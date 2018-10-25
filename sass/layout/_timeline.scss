@@ -422,49 +422,84 @@
         
         position: relative;
         width: 100%;
+        margin-top: 2rem;
         
-        &__head-container {
+        &__head {
             display: inline-block;
             margin-left: 25%;
+            font-weight: 500;
+            color: rgba($color-text-gray-medium, .7);
+            border-bottom: 1px solid rgba($color-text-gray-medium, .7);
+            
+            &:hover {
+            //font-weight: 700;
+            color: $color-flag-red-dark;
+            }
+        
+            &:hover ~ .mobile-timeline-item__date {
+                color: rgba($color-flag-red-dark, .8);
+                transform: scale(1.3);
+            }
+        
+            &:hover ~ .mobile-timeline-item__icon-container {
+                transform: scale(1.4) ;
+                 z-index: 20;
+            }
+            &:hover ~ .mobile-timeline-item__par {
+                transform: scale(1.4);
+                background-color: rgba($color-flag-red-light, .5);
+                z-index: 20;
+            }
         }
         
-        &__head-text {
-            border-bottom: 1px solid gray;
-        }
-        
-        &__date-container {
+        &__date {
             display: inline-block;
             position: relative;
-            right: 63%;
-            
-        }
-        
-        &__date-text {
-            
+            right: 65%;
+            //display: block;
+            //position: absolute;
+            font-family: Georgia;
+            font-size: 3rem;
+            font-weight: 700;
+            color: rgba(199, 13, 18, .2);
+            //opacity: 0;
+            transform: scale(1);
+            transition: all .4s;
+            transform-origin: right;
         }
         
         &__icon-container {
+            position: relative;
             display: inline-block;
-            left: 17.8%;
+            left: -62.5%;
+            top: 1.2rem;
+            background-color: #fff;
+            padding: .6rem;
+            //transform: rotate(45deg);
+            transition: all .4s;
         }
         
         &__icon-img {
-            
-        }
-        
-    }
-    
-    .mobile-timeline-box {
-        
-        &__container {
-            margin-left: 23%;
-            margin-top: .5rem;
+            transform: scale(1);
         }
         
         &__par {
-            
+            position: relative;
+            display: inline-block;
+            left: 25%;
+            max-width: 33rem;
+            font-size: 1.4rem;
+            line-height: 1.1;
+            background-color: rgba(230, 230, 230, .6);
+            padding: 2rem;
+            box-shadow: 0 3px 10px rgba(0,0,0, .2);
+            border-radius: 3px;
+            transform: scale(1);
+            transform-origin: 0 0;
+            transition: all .4s;
         }
     }
+    
     
     
 // STYLES FOR DATES AT THE BOTTOM & TOP OF THE TIMELINE AXIS
@@ -482,6 +517,7 @@
 
         &__top,
         &__bottom {
+            position: relative;
             display: inline-block;
             //text-align: center;
             font-family: Georgia;
@@ -489,10 +525,13 @@
             font-weight: 700;
             line-height: 1;
             margin-bottom: -3rem;
+            left: 15.5%;
         }
 
         &__top {
             border-bottom: 2px solid black;
+            margin-bottom: .5rem;
+        
         }
 
         &__bottom {
@@ -504,7 +543,6 @@
     // TIMELINE 'AXIS' START
     .timeline-axis {
         position: relative;
-        //padding-bottom: 3rem;
 
         &::before {
             position: absolute;
