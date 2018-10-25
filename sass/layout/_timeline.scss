@@ -277,7 +277,8 @@
         &--right {
             display: inline-block;
             position: relative;
-            left: calc(50% + 4rem);
+            margin-left: calc(50% + 4rem);
+            //left: calc(50% + 4rem);
             top: .5rem;
         }
         
@@ -422,12 +423,13 @@
         
         position: relative;
         width: 100%;
-        margin-top: 2rem;
+        margin-top: 5rem;
         
         &__head {
             display: inline-block;
             //margin-left: 25%;
             margin-left: 24rem;
+            margin-right: 0;
             font-weight: 500;
             color: rgba($color-text-gray-medium, .7);
             border-bottom: 1px solid rgba($color-text-gray-medium, .7);
@@ -471,6 +473,10 @@
             transform: scale(1);
             transition: all .4s;
             transform-origin: right;
+            
+            &--right {
+                top: 0rem;
+            }
         }
         
         &__icon-container {
@@ -502,6 +508,10 @@
             transform: scale(1);
             transform-origin: 0 0;
             transition: all .4s;
+        }
+        
+        &__link-right {
+            margin-left: 24rem;
         }
     }
     
