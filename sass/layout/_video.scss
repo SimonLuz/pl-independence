@@ -6,3 +6,12 @@
     display: inline-block;
     margin: 0 auto;
 }
+
+.video__header {
+    font-weight: 500;
+    
+    &--sub {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+}

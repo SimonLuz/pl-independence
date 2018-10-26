@@ -14,10 +14,14 @@
 .person {
     display: inline-block;
     
-    
-    img {
+    &__couple {
     display: block;  
-    height: 50rem;
+    width: 35rem;
+    }
+    
+    &__family {
+    display: block;  
+    width: 50rem;
     }
    
 }
