@@ -97,7 +97,7 @@
 // RAISED BOTTOM DATE BY 8 REM - div "row" has 8rem margin-bottom        
         &--bottom {
             position: relative;
-            top: -8rem;
+            top: -0rem;
         }
     }
     
@@ -384,6 +384,21 @@
      transform: rotate(270deg);
      transform-origin: right;
      line-height: 1;
+     
+     &--prewar {
+         top: 20rem;
+         left: -20rem;
+     }
+     
+     &--war {
+         top: 80rem;
+         left: -5rem;
+     }
+     
+     &--postwar {
+         top: 190rem;
+         left: -20rem;
+     }
 }
 
 .timeline-item__prewar {
@@ -526,17 +541,11 @@
     
     
 // STYLES FOR DATES AT THE BOTTOM & TOP OF THE TIMELINE AXIS
-    .timeline-date {
+    .mobile-timeline-date {
 
         &__container {
             text-align: left;
             width: 100%;
-
-// RAISED BOTTOM DATE BY 8 REM - div "row" has 8rem margin-bottom        
-            &--bottom {
-                position: relative;
-                top: -8rem;
-            }
         }
 
         &__top,
@@ -565,9 +574,9 @@
 
 
     // TIMELINE 'AXIS' START
-    .timeline-axis {
+    .mobile-timeline-axis {
         position: relative;
-        padding: 4rem 0;
+        padding: 0;
 
         &::before {
             position: absolute;
@@ -579,10 +588,37 @@
         }
     }
     // TIMELINE 'AXIS' STYLES END 
+    // 3 SEPARATE COLOR SECTIONS OF THE TIMELINE AXIS
+     .timeline-item__tag {
+         //margin-top: 35rem;
+         //margin-left: 5rem;
+         //float: left;
+         position: absolute;
+         display: block;
+         color: rgba(200,200,200, .6);
+         font-size: 7rem;
+         font-weight: 500;
+         letter-spacing: 6px;
+         transform: rotate(270deg);
+         transform-origin: right;
+         line-height: 1;
 
+         &--prewar {
+             top: 20rem;
+             left: 40rem;
+         }
 
+         &--war {
+             top: 80rem;
+             left: 55rem;
+         }
 
+         &--postwar {
+             top: 190rem;
+             left: 40rem;
+         }
     }
+}
 
 
 /*
