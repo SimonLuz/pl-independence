@@ -1440,6 +1440,7 @@ body {
       margin-right: 0;
       font-weight: 500;
       color: rgba(119, 119, 119, 0.7);
+      text-align: left;
       border-bottom: 1px solid rgba(119, 119, 119, 0.7);
       animation: fadeInRight;
       animation-duration: .8s;
@@ -1496,6 +1497,8 @@ body {
       transition: all .4s; }
     .mobile-timeline-item__link-right {
       margin-left: 24rem; }
+    .mobile-timeline-item__link-left {
+      left: 24rem; }
   .timeline-date__container {
     text-align: left;
     width: 100%; }
@@ -1517,7 +1520,8 @@ body {
   .timeline-date__bottom {
     border-top: 2px solid black; }
   .timeline-axis {
-    position: relative; }
+    position: relative;
+    padding: 4rem 0; }
     .timeline-axis::before {
       position: absolute;
       left: 18rem;
@@ -1576,98 +1580,6 @@ body {
 .timeline-item__date:hover + .timeline-item__box {
             background-color: red;
         }
-*/
-/*        
-                             
-                                
-                                
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <div class="timeline-item">
-                                       <h3 class="timeline-item__head timeline-item__head--left">CONCENTRATION CAMP OPERATION <br> <span>Nazi Germany sets up concentration camp </span></h3>
-                                        <span class="timeline-item__date timeline-item__date--left">1940-1944</span>
-                                        <div class="timeline-item__box timeline-item__box--cross">
-                                            <img src="img/hooked-cross.png" class="timeline-item__icon">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="timeline-item">
-                                        <h3 class="timeline-item__head timeline-item__head--left">WARSAW UPRISING - </h3>
-                                        <span class="timeline-item__date timeline-item__date--left">1944</span>
-                                        <div class="timeline-item__box timeline-item__box--cross">
-                                            <img src="img/hooked-cross.png" class="timeline-item__icon">
-                                        </div>
-                                    </div>
-                                    
-                                    <div>
-                                        <div class="timeline-link timeline-link__left">
-                                           <div class="timeline-link__img">
-                                               <img src="img/timeline-uprising.jpg">
-                                           </div>
-                                           <a href="#warsaw-uprising" class="timeline-link__btn--1920 timeline-link__btn btn btn__clear">more</a>
-                                        </div>
-                                    </div>
-                               
-                                </div>
-
-                                <div class="timeline-item__postwar" id="postwar">
-                                    <span class="timeline-item__tag">Post-war</span>
-
-                                    <div class="timeline-item">
-                                        <h3 class="timeline-item__head timeline-item__head--right">ANTI-COMMUNIST MILLITARY OPPOSITION <br><SPAN>"Cursed Soldiers" and guerilla war</SPAN> </h3>
-                                        <span class="timeline-item__date timeline-item__date--right ">1945</span>
-                                        <div class="timeline-item__box">
-                                            <img src="img/sickle_hammer.png" class="timeline-item__icon">
-                                        </div>
-                                        <p class="timeline-item__par--right timeline-item__par"> Polish anti-Soviet or anti-communist Polish resistance movements formed in the later stages of World War II and its aftermath by some members of the Polish Underground State. The clandestine organisations continued their armed struggle against the communist government of Poland well into the 1950s. 
-                                        </p>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <h3 class="timeline-item__head timeline-item__head--right">OPPOSION AGAINST THE COMMUNISTIC REGIME</h3>
-                                        <span class="timeline-item__date timeline-item__date--right ">1956</span>
-                                        <div class="timeline-item__box">
-                                            <img src="img/sickle_hammer.png" class="timeline-item__icon">
-                                        </div>
-                                        <p class="timeline-item__par--right timeline-item__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, nostrum, ea harum corporis iste nesciunt aut, vel amet incidunt dolore aspernatur sequi quisquam. Veritatis eveniet molestiae, iusto. Dolore, suscipit, alias.
-                                            </p>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <h3 class="timeline-item__head timeline-item__head--right">MARSHALL LAW - TANKS IN THE STREET</h3>
-                                        <span class="timeline-item__date timeline-item__date--right ">1981</span>
-                                        <div class="timeline-item__box">
-                                            <img src="img/sickle_hammer.png" class="timeline-item__icon">
-                                        </div>
-                                        <div>
-                                            <div class="timeline-link timeline-link__right">
-                                               <div class="timeline-link__img">
-                                                   <img src="img/timeline-stan.jpg">
-                                               </div>
-                                                <a href="#marshall-law" class="timeline-link__btn--1920 timeline-link__btn btn btn__clear">more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="timeline-item">
-                                       <h3 class="timeline-item__head timeline-item__head--left">TABLES TURN<br><span>transfer of power, first "free" elections</span> </h3>
-                                        <span class="timeline-item__date timeline-item__date--left">1989</span>
-                                        <div class="timeline-item__box ">
-                                            <img src="img/question-mark.svg" class="timeline-item__icon">
-                                        </div>
-                                        <div>
-                                            <div class="timeline-link timeline-link__left">
-                                               <div class="timeline-link__img">
-                                                   <img src="img/timeline-wybory.jpg">
-                                               </div>
-                                               <a href="#free-elections" class="timeline-link__btn--1920 timeline-link__btn btn btn__clear">more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>  
-                                -->
 */
 .drip-container {
   width: 100%;
