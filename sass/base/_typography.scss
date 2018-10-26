@@ -35,6 +35,12 @@
         @include respond(tabPort) {
             padding: 2rem 3rem;
         }
+        
+        @include respond(phone) {
+            column-count: 1;
+            column-gap: 0;
+            text-align: justify;
+        }
     }
     
     &__large-font {
@@ -42,6 +48,11 @@
         
         @include respond(tabPort) {
             font-size: 2rem;
+            padding: 0 2rem;
+        }
+        
+        @include respond(phone) {
+            font-size: 2.3rem;
             padding: 0 2rem;
         }
     }

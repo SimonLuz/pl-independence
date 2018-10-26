@@ -39,6 +39,11 @@ body {
         font-size: 1.8rem;
         line-height: 1.5;
     }
+    
+    @include respond(phone) {
+        font-size: $fontSize-mobile-phone;
+        line-height: 1.5;
+    }
 }
 
 

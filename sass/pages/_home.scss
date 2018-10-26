@@ -7,6 +7,11 @@
 
     background-color: $color-timeline-background-light;
     padding: 10rem 0;
+    
+    @include respond(phone) {
+        margin-top: 0;
+    }
+    
 }
 
 .intro-cards {

@@ -16,6 +16,11 @@
     &:nth-of-type(4) {
         
         margin-left: 20rem;
+        
+        @include respond(phone) {
+            margin-left: 0;
+    }
+        
     }
     
     // &:nth-of-type(3) {
@@ -35,6 +40,10 @@
         box-shadow: 0 .5rem 1rem rgba(0,0,0, .3);
         
         @include speechBubbleLeft;
+        
+         @include respond(phone) {
+            font-size: 2.2rem;
+        }
     }
     
     &__answer {
@@ -78,22 +87,43 @@
     padding-right: -5rem;
     margin-top: 3rem;
     
+    @include respond(phone) {
+        text-align: center;
+    }
+    
+    
     &__one {
         position: relative;
         top: 1rem;
-        left: -20rem
+        left: -20rem;
+            
+        @include respond(phone) {
+            position: static;
+            display: inline-block;
+        }
     }
     
     &__two {
         position: absolute;
         bottom: -4rem;
         left: 13rem;
+        
+        @include respond(phone) {
+            position: static;
+            display: inline-block; 
+            margin: 2rem 
+        }
     }
     
     &__three {
         position: absolute;
         bottom: 1;
         right: -6rem;
+        
+        @include respond(phone) {
+            position: static;
+            display: inline-block;
+        }
     }
     
     &__bottom-btn {

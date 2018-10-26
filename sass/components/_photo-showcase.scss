@@ -11,6 +11,11 @@
         float: left;
         width: 25%;
         overflow: hidden;
+        
+        @include respond(phone) {
+            width: 49%;
+        }      
+
     }
                 
     &__year {

@@ -72,18 +72,30 @@
 
     animation: drip_small 6s 1;
      animation-fill-mode: forwards;
+    
+    @include respond(phone) {
+        display: none;
+    }
 }
 .liquid__container .liquid__drip:nth-child(7) {
   right: -.3%;
     background-color: #9C0A0B;
     animation: drip_long 6s 1;
      animation-fill-mode: forwards;
+    
+    @include respond(phone) {
+        display: none;
+    }
 }
 .liquid__container .liquid__drip:nth-child(8) {
     right: 9%;
     background-color: #A01213;
     animation: drip_medium 6s 1;
      animation-fill-mode: forwards;
+    
+    @include respond(phone) {
+        display: none;
+    }
 }
 .liquid__container .liquid__drip:nth-child(9) {
     background-color: #A01213;
@@ -92,6 +104,10 @@
     width: 5rem;
     animation: drip_short_wide 6s 1;
      animation-fill-mode: forwards;
+    
+    @include respond(phone) {
+        display: none;
+    }
 }
 
 .liquid__container .liquid__drip:nth-child(10) {
@@ -101,6 +117,10 @@
     width: 7rem;
     animation: drip_short_base 6s 1;
      animation-fill-mode: forwards;
+    
+    @include respond(phone) {
+        display: none;
+    }
 }
 
 .liquid__container .liquid__drip:nth-child(11) {
@@ -110,6 +130,10 @@
     width: 5rem;
     animation: drip_short_wide_1 6s 1;
      animation-fill-mode: forwards;
+    
+    @include respond(phone) {
+        display: none;
+    }
 }
 
 .liquid__container .liquid__drip:nth-child(12) {
@@ -119,6 +143,10 @@
     width: 5rem;
     animation: drip_medium_1 6s 1;
      animation-fill-mode: forwards;
+    
+    @include respond(phone) {
+        display: none;
+    }
 }
 
 

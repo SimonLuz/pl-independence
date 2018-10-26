@@ -1,5 +1,9 @@
 .video-container {
     text-align: center;
+    
+    @include respond(tabPort) {
+        text-align: left;
+    }
 }
 
 .video {

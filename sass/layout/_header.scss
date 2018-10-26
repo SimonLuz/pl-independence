@@ -20,6 +20,10 @@
             @include respond(tabLand) {
                 font-size: 8rem;
             }
+            
+            @include respond(phone) {
+                font-size: 6rem;
+            }
         }
         
         &--container {
@@ -35,6 +39,13 @@
             animation: headerAppear 2s;
             animation-fill-mode: forwards;
             animation-delay: 1s;
+            
+            
+            @include respond(phone) {
+                top:10rem;
+                left: 2%;
+                transform: translate(0, 0);
+            }
         }
         
         &--bold {
@@ -42,20 +53,31 @@
             font-weight: 300;
             text-transform: uppercase;
             text-shadow: 1px 1px rgba(255, 255, 255, .5);
+                
+            @include respond(phone) {
+                font-size: 6rem;
+            }
             
             &:nth-of-type(4)::after {
+                display: inline-block;
                 position: absolute;
                 left: -1%;
                 top: 78%;
                 content: "";
                 height: .8rem;
-                width: 63rem;
+                //width: 63rem;
                 background-color: #e68c00;
                 opacity: 0;
                 transform: rotate(-4deg);
                 animation: headerStrike .3s;
                 animation-fill-mode: forwards;
                 animation-delay: 5s;
+                
+                @include respond(phone) {
+                    animation: headerStrike-mobile .3s;
+                    animation-fill-mode: forwards;
+                    animation-delay: 5s;
+                }
             }
         }
         
@@ -119,6 +141,13 @@
             top: 50%;
             font-size: 5.5rem;
         }
+        
+        @include respond(phone) {
+            left: 25%;
+            top: 33%;
+            font-size: 4.5rem;
+            transform: rotate(-18deg);
+        }
     }
     
     &__secondary {
@@ -143,6 +172,18 @@
         
         @include respond(tabLand) {
             bottom:-2rem;
+        }
+        
+         @include respond(phone) {
+            width: 50rem;
+            bottom: 4rem;
+            left: 20rem;
+            //transform: translateX(-38%);
+            font-size: 2.5rem;
+            font-weight: 300;
+            line-height: 1.5;
+            z-index: 20;
+            opacity: 0;
         }
         
         p {

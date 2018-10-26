@@ -16,6 +16,19 @@
     }
 }
 
+// animation for strikethrough for MOBILE
+@keyframes headerStrike-mobile{
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+    
+    100% {
+        width: 50rem;
+        opacity: 1;
+    }
+}
+
 @keyframes headerAppear {
     0% {
         opacity: 0;
