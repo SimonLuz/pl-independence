@@ -23,6 +23,22 @@
          transform: translate(-50%, -50%) scale(1);   
     }
     
+    &__heading {
+        
+        @include respond(tabLand) {
+            font-size: 2.5rem;
+        }
+        
+        @include respond(tabPort) {
+            font-size: 3.5rem;
+        }
+        
+        @include respond(phone) {
+            font-size: 3.5rem;
+            margin-top: 4rem;
+        }
+    }
+    
     &__close {
         &:link,
         &:visited {
@@ -36,6 +52,10 @@
             text-decoration: none;
             transition: all .3s;
             font-weight: 300;
+            
+            @include respond(tabPort) {
+                font-weight: 500;
+            }
         }
         
         &:hover {
@@ -45,6 +65,7 @@
     
     &__content {
         @include absCenter;
+        @include clearfix;
         
         width: 75%;
         background-color: #fff;
@@ -55,11 +76,43 @@
         display: table;
         transform: translate(-50%, -50%) scale(.3);
         transition: all .3s .4s;
+        
+        @include respond(tabPort) {
+            display: block;
+            width: 85vw;
+            height: 85vh;
+            margin: 0 auto;
+            padding: 3rem 4rem;
+            text-align: center;
+        }
+        
+        @include respond(phone) {
+            display: block;
+            width: 95vw;
+            height: 95vh;
+            margin: 0 auto;
+            padding: 0rem 0rem;
+            text-align: center;
+        }
     }
     
     &__left {
         width: 33.33333%;
         display: table-cell;
+        float: left;
+        
+        @include respond(tabPort) {
+            display: block;
+            width: 100%;
+            height: 30%;
+        }
+        
+        @include respond(phone) {
+            display: block;
+            width: 100%;
+            height: 25%;
+            padding-top: 2rem;
+        }
     }
     
     &__right {
@@ -67,100 +120,51 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+        float: right;
+        
+        @include respond(tabPort) {
+            display: block;
+            width: 100%;
+        }
+        
+         @include respond(phone) {
+            display: block;
+            width: 100%;
+            height: 75%;
+            padding: 0;
+        }
     }
         
     &__img {
         display: block;
         width: 100%;
+        
+        @include respond(tabPort) {
+            display: inline-block;
+            height: 100%;
+            width: auto;
+        }
+        
+        @include respond(phone) {
+            display: inline-block;
+            width: 49%;
+            height: auto;
+            padding: 0;
+        }
     }
             
     &__text {
-        overflow-y: scroll;
         height: 22rem;
-    }
-}
-
-
-// TIMELINE AXIS - PHOTOS & LINK FOR POPUP WINDOW STORIES
-/*
-.timeline-link {
-    position: relative;
-    width: 200px;
-    height: 120px;
-   // border: 1px solid black;
-    background-color: red;
-    box-shadow: 0rem .5rem 1rem rgba(0,0,0, .3);
-    border-radius: 3px;
-    background:
-        linear-gradient(
-            rgba(0,0,0, 0.3),
-            rgba(0,0,0, 0.3)
-        ),
-        url(../img/polish-soviet.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    transition: all 1s;
-    z-index: 100;
-    margin: 1rem 0;
-    
-    &:hover {
-         background:
-        linear-gradient(
-            rgba(0,0,0, 0.6),
-            rgba(0,0,0, 0.6)
-        ),
-        url(../img/polish-soviet.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-}
-    
-    &__right {
-        margin-left: calc(50% + 4rem);
+        text-align: left;
+        overflow-y: scroll;
         
-    }
-    
-    &__left {
-        display: inline-block;
-        right: calc(-50% + 25rem);
-    }
-*/
-/*
-// CLEAR PHOTO BUTTON STYLES
-    &__btn {
-        
-        &--clear {
-            display: inline-block;
-            text-decoration: none;
-            font-family: sans-serif;
-            display: inline-block;
-            box-sizing: border-box;
-            padding: 10px 20px;
-            border: 1px solid rgba(255,255,255, .6);
-            color: rgba(255,255,255, .6);
-            border-radius: 3px;
-            font-size: 16px;
-            margin-top: 35px;
-            transition: all .5s;
-            text-transform: uppercase;
-            
-            &:after {
-                position: absolute;
-                display: inline-block;
-                left: 125px;
-                top: 46px;
-                content: ">";
-                font-family: monospace;
-                font-size: 15px;
-            }
-
-            &:hover {
-                border: 1px solid rgba(255,255,255, 1);
-                color: rgba(250,250,250, 1);
-                text-decoration: underline;
-            }
+        @include respond(phone) {
+           padding: 1rem 5rem;
+            font-size: 2.5rem;
+            height: 70%;
         }
     }
     
+    
 }
-*/
+
