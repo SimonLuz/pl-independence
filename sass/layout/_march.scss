@@ -2,6 +2,10 @@
     margin: 0 auto;
     max-width: 80rem;
     margin-top: 10rem;
+    
+    @include respond(tabPort) {
+        padding: 0 2rem;
+    }
    
 }
 

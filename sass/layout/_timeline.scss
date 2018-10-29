@@ -23,7 +23,6 @@
 // END - OPACITY FOR BCKGROUND MAP ON THE SECTION"S INTRO PARAGRAPH
 
 
-
 .long-copy__timeline-map {
     position: relative;
     //margin: 6rem 0;
@@ -99,7 +98,6 @@
     &__container {
          text-align: center;
         
-// RAISED BOTTOM DATE BY 8 REM - div "row" has 8rem margin-bottom        
         &--bottom {
             position: relative;
             top: -0rem;
@@ -130,7 +128,6 @@
 // TIMELINE 'AXIS' START
 .timeline-axis {
     position: relative;
-    //padding-bottom: 3rem;
     
     &::before {
         position: absolute;
@@ -168,14 +165,6 @@
         &--cross {
             transform: rotate(45deg);
         }
-
-        
-        /*
-        &--animated {
-            animation-name: iconTransform;
-            animation-duration: .4s;
-            animation-fill-mode: forwards;
-        }*/ 
     }
 
     
@@ -234,19 +223,17 @@
         display: inline-block;
         font-weight: 500;
         opacity: 0;
-        //transform: scale(1);
-        //transform-origin: bottom;
         transition: all .8s;
+        text-decoration: underline;
         
         span {
             font-weight: 300;
             font-size: 1.5rem;
+            text-decoration: none;
         }        
         
         &:hover {
             cursor: default;
-            //transform: scale(1.3);
-            //font-size: 2rem;
             font-weight: 700;
             color: $color-flag-red-dark;
         }
@@ -283,7 +270,6 @@
             display: inline-block;
             position: relative;
             margin-left: calc(50% + 4rem);
-            //left: calc(50% + 4rem);
             top: .5rem;
         }
         
@@ -390,6 +376,8 @@
      transform-origin: right;
      line-height: 1;
      
+   
+     
      &--prewar {
          top: 20rem;
          left: -20rem;
@@ -434,7 +422,7 @@
     }
 
 //=================================
-// Mobile tabPort TIMELINE STYLES - 600-900px
+// Mobile tabPort(600-900px) & phone (up to 600px) TIMELINE STYLES
 //=================================
 
 @include respond(tabPort) {
@@ -453,13 +441,14 @@
             font-weight: 500;
             color: rgba($color-text-gray-medium, .7);
             text-align: left;
-            border-bottom: 1px solid rgba($color-text-gray-medium, .7);
+            //border-bottom: 1px solid rgba($color-text-gray-medium, .7);
             animation: fadeInRight;
             animation-duration: .8s;
             animation-fill-mode: forwards;
             
-            
-            
+            span {
+                font-size: 1.8rem;
+            }
             
             &:hover {
             //font-weight: 700;
@@ -477,7 +466,7 @@
             }
             &:hover ~ .mobile-timeline-item__par {
                 transform: scale(1.4);
-                background-color: rgba($color-flag-red-light, .5);
+                background-color: rgba($color-flag-red-light, .9);
                 z-index: 20;
             }
         }
@@ -532,6 +521,12 @@
             transform: scale(1);
             transform-origin: 0 0;
             transition: all .4s;
+            
+            @include respond(phone) {
+                transform-origin: 100% 0;
+                font-size: 1.7rem;
+                max-width: 30rem;
+            }
         }
         
         &__link-right {
@@ -607,6 +602,10 @@
          transform: rotate(270deg);
          transform-origin: right;
          line-height: 1;
+         
+         @include respond(phone) {
+             display: none;
+         }
 
          &--prewar {
              top: 20rem;
@@ -624,6 +623,8 @@
          }
     }
 }
+
+
 
 
 /*
