@@ -174,7 +174,11 @@
             bottom:-2rem;
         }
         
-         @include respond(phone) {
+        @include respond(tabPort) {
+            width: 70rem;
+        }
+        
+        @include respond(phone) {
             width: 50rem;
             bottom: 4rem;
             left: 20rem;

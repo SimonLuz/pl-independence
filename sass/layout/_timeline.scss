@@ -336,7 +336,7 @@
     &:hover {
         transform: translateY(-2px);
         box-shadow: 0 1rem 1.5rem rgba(0,0,0, .3);
-        filter: brightness(80%);
+        //filter: brightness(80%);
         }
     
     &__right {
@@ -392,6 +392,48 @@
          top: 190rem;
          left: -20rem;
      }
+}
+
+.timeline-nav {
+    display: inline-block;
+    background-color: rgba(254, 207, 209, 0.6);  //#f0f0f0;
+    font-weight: 300;
+    padding: 1rem;
+    
+    &__container {
+        display: block;
+        text-align: left;
+        
+        @include respond(tabPort) {
+            text-align: right;
+        }
+    }
+    
+    span {
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+    
+    &__click {
+        
+        @include respond(tabPort) {
+            display: none;            
+        }
+    }
+    
+    &__tap {
+        display: none;
+        
+        @include respond(tabPort) {
+            display: inline-block; 
+            font-size: 1.3rem;
+        }
+        
+        @include respond(phone) {
+            display: inline-block; 
+            font-size: 1.5rem;
+        }
+    }
 }
 
 .timeline-item__prewar {

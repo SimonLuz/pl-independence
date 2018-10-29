@@ -75,7 +75,8 @@
     }
             
     &__text {
-        
+        overflow-y: scroll;
+        height: 22rem;
     }
 }
 
