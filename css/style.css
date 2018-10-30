@@ -792,7 +792,7 @@ body {
     transform: translate(-50%, -50%);
     width: 75%;
     background-color: #fff;
-    height: 40rem;
+    height: 435px;
     border-radius: 3px;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
     overflow: hidden;
@@ -808,7 +808,7 @@ body {
       .timeline-popup__content {
         display: block;
         width: 95rem;
-        height: 330px;
+        height: 394px;
         margin: 0 auto;
         text-align: center; } }
     @media (max-width: 56.25em) {
@@ -889,7 +889,7 @@ body {
         padding: 0; } }
   .timeline-popup__text {
     display: block;
-    height: 60%;
+    height: 65%;
     text-align: left;
     overflow-y: scroll; }
     @media (max-width: 56.25em) {

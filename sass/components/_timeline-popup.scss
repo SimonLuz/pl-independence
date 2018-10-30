@@ -81,7 +81,7 @@
         
         width: 75%;
         background-color: #fff;
-        height: 40rem;
+        height: 435px;
         border-radius: 3px;
         box-shadow: 0 2rem 4rem rgba(0,0,0, .3);
         overflow: hidden;
@@ -93,7 +93,7 @@
         @include respond(tabLand) {
             display: block;
             width: 95rem;
-            height: 330px;
+            height: 394px;
             margin: 0 auto;
            // padding: 3rem 4rem;
             text-align: center;
@@ -121,6 +121,7 @@
     &__left {
         width: 33.33333%;
         display: table-cell;
+        //height: 435px;
         float: left;
         
         @include respond(tabLand) {
@@ -194,7 +195,7 @@
             
     &__text {
         display: block;
-        height: 60%;
+        height: 65%;
         text-align: left;
         overflow-y: scroll;
         
