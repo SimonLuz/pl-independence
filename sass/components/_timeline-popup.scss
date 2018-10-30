@@ -31,6 +31,8 @@
         
         @include respond(tabPort) {
             font-size: 3.5rem;
+            margin-top: 2rem;
+            line-height: 1.2;
         }
         
         @include respond(phone) {
@@ -52,9 +54,19 @@
             text-decoration: none;
             transition: all .3s;
             font-weight: 300;
+                        
             
             @include respond(tabPort) {
                 font-weight: 500;
+                background-color: #f2f2f2;
+                padding: .5rem .9rem;;
+                border-radius: 50%;
+                line-height: 1;
+            }
+            
+            @include respond(phone) {
+                top:23rem;
+                right: 3rem;
             }
         }
         
@@ -73,9 +85,19 @@
         border-radius: 3px;
         box-shadow: 0 2rem 4rem rgba(0,0,0, .3);
         overflow: hidden;
-        display: table;
+        display: block;
         transform: translate(-50%, -50%) scale(.3);
         transition: all .3s .4s;
+        text-align: center;
+        
+        @include respond(tabLand) {
+            display: block;
+            width: 95rem;
+            height: 330px;
+            margin: 0 auto;
+           // padding: 3rem 4rem;
+            text-align: center;
+        }
         
         @include respond(tabPort) {
             display: block;
@@ -101,10 +123,17 @@
         display: table-cell;
         float: left;
         
+        @include respond(tabLand) {
+            display: block;
+            width: 295px;
+            height: 100%;
+        }
+        
         @include respond(tabPort) {
             display: block;
             width: 100%;
             height: 30%;
+            float: none;
         }
         
         @include respond(phone) {
@@ -112,19 +141,29 @@
             width: 100%;
             height: 25%;
             padding-top: 2rem;
+            overflow: hidden;
         }
     }
     
     &__right {
+        display: block;
         width: 66.66666%;
-        display: table-cell;
+        height: 100%;
         vertical-align: middle;
-        padding: 3rem 5rem;
+        padding: 3rem 4rem;
         float: right;
+        
+        @include respond(tabLand) {
+            display: block;
+            width: 550px;
+            height: 100%;
+            float:right;
+        }
         
         @include respond(tabPort) {
             display: block;
             width: 100%;
+            height: 70%;
         }
         
          @include respond(phone) {
@@ -141,8 +180,8 @@
         
         @include respond(tabPort) {
             display: inline-block;
-            height: 100%;
-            width: auto;
+            height: auto;
+            width: 49%;
         }
         
         @include respond(phone) {
@@ -154,9 +193,14 @@
     }
             
     &__text {
-        height: 22rem;
+        display: block;
+        height: 60%;
         text-align: left;
         overflow-y: scroll;
+        
+         @include respond(tabPort) {
+            height: 70%;
+        }
         
         @include respond(phone) {
            padding: 1rem 5rem;
@@ -164,7 +208,5 @@
             height: 70%;
         }
     }
-    
-    
 }
 
