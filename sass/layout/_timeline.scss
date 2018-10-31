@@ -348,8 +348,19 @@
         right: calc(-50% + 24rem);
     }
     
-    &__img img {
-        width: 100%;
+    &__img {
+        
+        @include respond(phone) {
+            display: block;
+            height: auto;
+        }
+        
+        display: block;
+        height: auto;
+        
+        img {
+            width: 100%;
+        }
     }
     
     &__btn {
@@ -666,6 +677,26 @@
     }
 }
 
+.timeline-link {
+    @include respond(tabPort) {
+        width: 25rem;
+        height: auto;
+    }
+    
+    &__img {
+        @include respond(tabPort) {
+        height: auto;
+        }
+        
+        img {
+            
+            @include respond(tabPort) {
+                display: block;
+            }
+            display: block;
+        }
+    }
+}
 
 
 

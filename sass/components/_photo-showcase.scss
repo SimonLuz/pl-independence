@@ -12,10 +12,17 @@
         width: 25%;
         overflow: hidden;
         
+        @include respond(tabPort) {
+            width: 50%;
+        }   
+        
         @include respond(phone) {
-            width: 49%;
-        }      
-
+            width: 100%;
+        } 
+        
+        img {
+            display: block;
+        }
     }
                 
     &__year {
@@ -29,6 +36,16 @@
         line-height: 1;
         opacity: 0;
         transition: opacity .8s;
+        
+        @include respond(tabPort) {
+            font-size: 6rem;
+            
+            
+        }
+        
+        @include respond(tabPort) {
+            font-size: 9.5rem;
+        }
     }
         
     &__sub {
@@ -43,6 +60,16 @@
             font-weight: 300;
             opacity: 0;
             transition: opacity .8s;
+            
+            @include respond(tabPort) {
+                font-size: 2.7rem;
+                left: 14rem;
+            }
+        
+            @include respond(tabPort) {
+                font-size: 4rem;
+                left: 22rem;
+            }
         }
     
     
@@ -70,7 +97,15 @@
         opacity: 1;
         padding: .5rem .8rem;
         transform: translate(-100%, -100%);
-       transition: all .6s;
+        transition: all .6s;
+        
+        @include respond(tabPort) {
+            font-size: 2rem;
+        }
+        
+        @include respond(phone) {
+            font-size: 3rem;
+        } 
     }
     
     &__photo:hover {
