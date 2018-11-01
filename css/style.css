@@ -627,6 +627,7 @@ body {
   display: block;
   float: left;
   width: 25%;
+  height: auto;
   overflow: hidden; }
   @media (max-width: 56.25em) {
     .photo-container__item {
@@ -923,7 +924,7 @@ body {
         padding: 0; } }
   .timeline-popup__text {
     display: block;
-    height: 65%;
+    height: 60%;
     text-align: left;
     overflow-y: scroll; }
     @media (max-width: 56.25em) {
@@ -1983,22 +1984,68 @@ body {
 .dialog-container {
   margin: 0 auto;
   max-width: 80rem;
-  margin-top: 10rem; }
+  margin-top: 10rem;
+  margin-bottom: 20rem; }
   @media (max-width: 56.25em) {
     .dialog-container {
       padding: 0 2rem; } }
 
 .silhuettes {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  max-width: 114rem;
   text-align: center; }
 
 .person {
-  display: inline-block; }
+  display: inline-block;
+  z-index: 20; }
   .person__couple {
-    display: block;
-    width: 35rem; }
+    width: 24%;
+    filter: grayscale(80%); }
+    .person__couple img {
+      display: block;
+      width: 100%; }
+    @media (max-width: 37.5em) {
+      .person__couple {
+        width: 37%; } }
   .person__family {
-    display: block;
-    width: 50rem; }
+    width: 33%;
+    margin-bottom: 3rem; }
+    .person__family img {
+      display: block;
+      width: 100%; }
+    @media (max-width: 37.5em) {
+      .person__family {
+        display: none; } }
+  .person__old {
+    width: 26%; }
+    .person__old img {
+      display: block;
+      width: 100%; }
+    @media (max-width: 37.5em) {
+      .person__old {
+        width: 38%; } }
+  .person__girl {
+    width: 15%; }
+    .person__girl img {
+      display: block;
+      width: 100%; }
+    @media (max-width: 37.5em) {
+      .person__girl {
+        width: 22%; } }
+  .person__abs {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0; }
+
+.bottom__background {
+  max-width: 114rem;
+  height: 25rem;
+  margin: -4rem auto 0 auto;
+  background-color: darkgray;
+  clip-path: polygon(0% 12%, 100% 0%, 100% 100%, 0 100%); }
 
 .video__container {
   max-width: 80rem;
