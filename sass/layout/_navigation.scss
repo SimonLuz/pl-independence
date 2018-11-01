@@ -1,0 +1,81 @@
+.navigation {
+    
+    &__checkbox {
+        display: none;
+    }
+    
+    &__button {
+        position: fixed;
+        top: 3.25rem;
+        right: 3.25rem;
+        background-color: $color-flag-red-dark;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 3px;
+        border: 1px solid #fff;
+        z-index: 60;
+    }
+    
+    &__background {
+        position: fixed;
+        top: 3rem;
+        right: 3rem;
+        background-color: $color-flag-red-dark;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 3px;
+        z-index: 50;
+    }
+    
+    &__nav {
+        position: fixed;
+        
+        top:3.3rem;
+        right: 8rem;
+        width: auto;
+        z-index: 40;
+    }
+    
+    &__list {
+        list-style: none;
+        background-color: rgba($color-flag-red-dark, .7);
+        height: 5rem;
+        padding: 1rem 0;
+        width: auto;
+        z-index: 40;
+        border-radius: 2px;
+    }
+    
+    &__item {
+        display: inline-block;
+        
+        &:not(:last-child) {
+            border-right: 1px solid $color-steel-gray-light;
+
+        }
+    }
+    
+    &__link {
+        position: relative;
+        display: inline-block;
+        line-height: 1;
+        margin:0 1.5rem;
+        text-decoration: none;
+        text-transform: lowercase;
+        font-size: 2rem;
+        color: $color-steel-gray-light;
+        transition: all .3s;
+        
+        
+        
+        &:hover {
+            top: -2px;
+            box-shadow: 0 .5rem 1.3rem rgba(0,0,0, .1);
+            //background-color: $color-text-gray-medium;
+            color: #fff;
+            border-bottom: 1px solid #fff;
+            //font-weight: 500;
+        }
+    }
+    
+}

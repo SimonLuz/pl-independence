@@ -1317,6 +1317,67 @@ body {
       .header__secondary--bottom-btn span {
         font-size: 1.4rem; }
 
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  position: fixed;
+  top: 3.25rem;
+  right: 3.25rem;
+  background-color: #9c0a0b;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  z-index: 60; }
+
+.navigation__background {
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  background-color: #9c0a0b;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 3px;
+  z-index: 50; }
+
+.navigation__nav {
+  position: fixed;
+  top: 3.3rem;
+  right: 8rem;
+  width: auto;
+  z-index: 40; }
+
+.navigation__list {
+  list-style: none;
+  background-color: rgba(156, 10, 11, 0.7);
+  height: 5rem;
+  padding: 1rem 0;
+  width: auto;
+  z-index: 40;
+  border-radius: 2px; }
+
+.navigation__item {
+  display: inline-block; }
+  .navigation__item:not(:last-child) {
+    border-right: 1px solid #e8e8e8; }
+
+.navigation__link {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  margin: 0 1.5rem;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: 2rem;
+  color: #e8e8e8;
+  transition: all .3s; }
+  .navigation__link:hover {
+    top: -2px;
+    box-shadow: 0 0.5rem 1.3rem rgba(0, 0, 0, 0.1);
+    color: #fff;
+    border-bottom: 1px solid #fff; }
+
 .timeline-map {
   position: relative;
   overflow: hidden;
