@@ -124,6 +124,12 @@
         //height: 435px;
         float: left;
         
+        &--nophoto {
+            background-color: #555;
+            width: 30rem;
+            height: 100%;
+        }
+        
         @include respond(tabLand) {
             display: block;
             width: 295px;
@@ -144,6 +150,8 @@
             padding-top: 2rem;
             overflow: hidden;
         }
+        
+        
     }
     
     &__right {

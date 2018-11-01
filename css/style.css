@@ -866,6 +866,10 @@ body {
     width: 33.33333%;
     display: table-cell;
     float: left; }
+    .timeline-popup__left--nophoto {
+      background-color: #555;
+      width: 30rem;
+      height: 100%; }
     @media (max-width: 75em) {
       .timeline-popup__left {
         display: block;
@@ -2011,7 +2015,7 @@ body {
         width: 37%; } }
   .person__family {
     width: 33%;
-    margin-bottom: 3rem; }
+    margin-bottom: 2rem; }
     .person__family img {
       display: block;
       width: 100%; }
