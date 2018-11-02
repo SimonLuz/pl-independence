@@ -101,13 +101,7 @@
     
         &--bottom {
             height: 55%;
-            //position: relative;
             background: white;
-            //background-image: linear-gradient(
-            //    to right, 
-            //    #fecfd1, 
-            //    //#d4213D,
-            //    #9c0a0b);
         }
     }
     
@@ -213,10 +207,6 @@
         
         &--bottom-btn {
             margin-top: 4rem;
-            //position: absolute;
-            
-            //bottom:-6rem;
-            //left: 40%;
             
             span {
                 font-size: 1.4rem;
@@ -224,173 +214,6 @@
             
         }
     }
-
-/*
-     &__primary {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        font-family: Lato;
-        line-height: .9;
-        color: #9c0a0b;
-    
-        &--main {
-            display: block;
-            position: absolute;
-            top: 2%;
-            left: 2%;
-            font-size: 95px;
-            font-weight: 500;
-            color: rgba(70, 70, 70, .1);
-        } 
-         
-        &--container {
-            display: inline-block;
-            width: 114rem;     
-            //position: absolute;
-            //top: 0%;
-            margin: 0 auto;
-            //transform: translate(-50% -50%);
-        }
-
-        &--sub {
-            //display: block;
-            //width: 65%;
-            //position: absolute;
-            //font-weight: 100;
-            //top: 25%;
-            //left: 50%;
-            //transform: translate(-50%, -50%);
-        }
-         
-         &--cel {
-             //display: block;
-             width: 100%;
-         }
-        
-            &--100 {
-                //display: block;
-                font-weight: 700;
-
-            } 
-
-            &--of {
-                //display: block;
-            } 
-
-            &--ind {
-                //position: absolute;
-                //left: 25%;
-                //text-transform: uppercase;
-                //text-align: right;
-            }
-
-            &--bold {
-                font-size: 70px;
-                font-weight: 500;
-             }
-         
-            &--par {
-                display: none;
-                z-index: 10;
-                background: rgba(170, 70, 70, .5);
-                position: absolute;
-                padding: 20px;
-                top: 68%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-size: 20px;
-                font-weight: 100;
-                color: #fff;
-                line-height: 1.5;
-                text-align: center;
-                border-radius: 3px;
-                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
-
-            }
-    }
-    
-    &__btn {
-        background-color: rgba(170,170,170, .8);
-        color: #fff;
-        text-decoration: none;
-        text-transform: uppercase;
-        padding: 10px 20px;
-        margin: 10px;
-    }
-    
-    &__flag {
-        width: 100%;
-        height: 100%;
-            
-        &--top {
-          height: 45%;
-          background-image: linear-gradient(
-            to right,
-            #f0f0f0,
-            #dadada);
-        }
-    
-        &--bottom {
-            height: 55%;
-            //position: relative;
-            background: white;
-            //background-image: linear-gradient(
-            //    to right, 
-            //    #fecfd1, 
-            //    //#d4213D,
-            //    #9c0a0b);
-        }
-        
-        &--blood {
-            text-align: right;
-            
-            &-photo {
-                max-width: 25%;
-            }
-        }
-    }
-    
-    &__stamp {
-        position: absolute;
-        top: 35%;
-        left: 53%;
-        font-family: Courier;
-        text-transform: uppercase;
-        font-size: 80px;
-        font-weight: 700;
-        color: #e68c00;
-        border-bottom: 4px solid #e68c00;
-        border-top: 4px solid #e68c00;
-        transform: rotate(-25deg);
-        z-index: 20;
-        //backdrop-filter: blur(22px);
-        //-webkit-backdrop-filter: blur(22px);
-        
-    }
-    
-    &__secondary {
-        
-        display: block;
-        width: 700px;
-        background-color: rgba(225, 225, 225, 0.5);
-        position: absolute;
-        padding: 20px;
-        top: 68%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 25px;
-        font-weight: 300;
-        color: #9c0a0b;
-        line-height: 1.5;
-        text-align: left;
-        border-radius: 3px;
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
-        z-index: 20;
-        //-webkit-backdrop-filter: blur(3px);
-        //filter: blur(3px);
-    }
-    */
 }
 
 

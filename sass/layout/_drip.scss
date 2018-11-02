@@ -2,11 +2,8 @@
   width: 100%;
   height: 100%;
   margin: 0 auto 1.5rem auto;
-  //background: #ccc;
-    z-index: 10;
-  //overflow: hidden;
+  z-index: 10;
   position: relative;
-  //box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 .liquid__background {
@@ -23,13 +20,6 @@
   animation: liquid 6s 1;
     animation-fill-mode: forwards;
     
-/*     @include respond(tabPort) {
-        background-image: linear-gradient(
-            to bottom right, 
-            #fecfd1, 
-            #9c0a0b);;
-        }
-    */
 }
 
 .liquid__container {
@@ -38,6 +28,7 @@
   height: 100%;
   position: relative;
 }
+
 .liquid__container .liquid__drip {
   width: 30px;
   height: 30px;
@@ -47,11 +38,6 @@
   top: 0;
     color: white;
 }
-
-//.liquid__container .liquid__drip:nth-child(1) {
-//left: 4%;
-//    animation: drip-zero 15s infinite;
-//}
 
 .liquid__container .liquid__drip:nth-child(2) {
    display: none;
@@ -98,7 +84,7 @@
     }
 }
 .liquid__container .liquid__drip:nth-child(9) {
-    background-color: #A01213;
+    background-color: #A61E1F;
 
     right: 6%;
     width: 5rem;
@@ -124,7 +110,7 @@
 }
 
 .liquid__container .liquid__drip:nth-child(11) {
-    background-color:#B43B3C;
+    background-color:#B3393A;
 
     right: 20%;
     width: 5rem;
