@@ -22,8 +22,8 @@ $(document).ready(function() {
     })
 
 // SCROLL TO SECTION 
-    $(".js--scroll-to-section-intro").click(function() {
-        $("html, body").animate({scrollTop: $(".js--section-intro").offset().top}, 600);
+    $(".js--scroll-to-section-past").click(function() {
+        $("html, body").animate({scrollTop: $(".js--section-past").offset().top}, 600);
     });
     
     $(".js--scroll-to-section-about").click(function() {
@@ -42,12 +42,24 @@ $(document).ready(function() {
         $("html, body").animate({scrollTop: $(".js--section-intro-cards").offset().top}, 600);
     })
     
+    $(".js--scroll-to-section-home").click(function() {
+        $("html, body").animate({scrollTop: $(".js--section-home").offset().top}, 900);
+    })
+    
+    $(".js--scroll-to-section-qa").click(function() {
+        $("html, body").animate({scrollTop: $(".js--section-qa").offset().top}, 400);
+    })
+    
 // SHOW/HIDE THE MAP IN TIMELINE SECTION
     $(".js--btn-map").click(function() {
         $(".timeline-map__container").toggleClass("timeline-map__display");
     });
     
-/*
+
+    
+    
+    
+    /*
 // svastika & commy ICON ANIMATION STYLES --- STILL ANIMATES AAAAAAALLLLLLLL ICONS, NOT JUST THE PARENT
     $('.timeline-item__date').hover(function() {
         $('.timeline-item__date').next().toggleClass('timeline-item__box--animated');
