@@ -1118,7 +1118,9 @@ footer p {
     animation-delay: 5s; }
     @media (max-width: 37.5em) {
       .header__primary--bold:nth-of-type(4)::after {
-        animation: headerStrike-mobile .3s;
+        width: 47rem;
+        height: .5rem;
+        animation: headerStamp .3s;
         animation-fill-mode: forwards;
         animation-delay: 5s; } }
 
@@ -1392,14 +1394,14 @@ footer p {
 .long-copy__timeline-map {
   position: relative;
   padding: 2rem 2rem;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.6);
   z-index: 20;
   color: #555; }
 
 .long-copy__column--timeline {
   position: relative;
   padding: 2rem 3rem;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.6);
   z-index: 20;
   color: #555; }
 
@@ -1826,10 +1828,10 @@ footer p {
       top: 20rem;
       left: 40rem; }
     .timeline-item__tag--war {
-      top: 80rem;
+      top: 90rem;
       left: 55rem; }
     .timeline-item__tag--postwar {
-      top: 190rem;
+      top: 260rem;
       left: 40rem; } }
 
 @media (max-width: 56.25em) {

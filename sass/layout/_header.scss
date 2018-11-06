@@ -77,7 +77,9 @@
                 animation-delay: 5s;
                 
                 @include respond(phone) {
-                    animation: headerStrike-mobile .3s;
+                    width: 47rem;
+                    height: .5rem;
+                    animation: headerStamp .3s;
                     animation-fill-mode: forwards;
                     animation-delay: 5s;
                 }
@@ -186,8 +188,6 @@
             line-height: 1.5;
             z-index: 20;
             opacity: 0;
-            
-            
         }
         
         p {

@@ -22,13 +22,11 @@
 }
 // END - OPACITY FOR BCKGROUND MAP ON THE SECTION"S INTRO PARAGRAPH
 
-
+// START- Section paragraphs laid od top of the map
 .long-copy__timeline-map {
     position: relative;
-    //margin: 6rem 0;
     padding: 2rem 2rem;
-    background-color: rgba(255,255,255, .7);
-    //opacity: 1;
+    background-color: rgba(255,255,255, .6);
     z-index: 20;
     color: #555;
 }
@@ -36,7 +34,7 @@
 .long-copy__column--timeline {
     position: relative;
     padding: 2rem 3rem;
-    background-color: rgba(255,255,255, .7);
+    background-color: rgba(255,255,255, .6);
     z-index: 20;
     color: #555;
 }
@@ -297,10 +295,6 @@
         transform-origin: top;
         transition: all .4s;
         
-        //&:hover {
-          //      transform: scale(1.5);
-            //}
-        
         &--left {
             display: inline-block;
             position: relative;
@@ -558,7 +552,6 @@
             top: -.6rem;
             background-color: #fff;
             padding: .6rem;
-            //transform: rotate(45deg);
             transition: all .4s;
         }
         
@@ -647,6 +640,7 @@
         }
     }
     // TIMELINE 'AXIS' STYLES END 
+    
     // 3 SEPARATE COLOR SECTIONS OF THE TIMELINE AXIS
      .timeline-item__tag {
          //margin-top: 35rem;
@@ -672,12 +666,12 @@
          }
 
          &--war {
-             top: 80rem;
+             top: 90rem;
              left: 55rem;
          }
 
          &--postwar {
-             top: 190rem;
+             top: 260rem;
              left: 40rem;
          }
     }
