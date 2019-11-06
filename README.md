@@ -1,7 +1,7 @@
 # pl-independence
-100th Anniversary of Poland regaining independence 
+100th Anniversary of Poland regaining independence www.polandindependence.com
 
-Website designed and coded by Szymon Luzny
+Website designed and coded entirely by Szymon Luzny
 
 Technologies & Libraries used:
 
